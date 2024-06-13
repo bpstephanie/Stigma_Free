@@ -111,6 +111,12 @@ main {
     margin-top: 2%;
 }
 
+.landing-button:hover {
+    background-color: rgb(154, 41, 196);
+    border: 2px solid rgb(52, 15, 66);
+    color: white;
+}
+
 /* STD section */
 #std-card-heading {
     font-size: 130%;
@@ -221,6 +227,36 @@ footer div {
 
 /* Media query: tablets (768px and up)*/
 @media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        position: relative;
+        box-shadow: none;
+        display: block;
+        padding-right: 1rem;
+        width: fit-content;
+    }
+    
+    .nav-menu-list {
+        display: flex;
+        align-items: baseline;
+    }
+    
+    .nav-menu-list>li {
+        padding-right: 20px;
+    }
+    
+    .nav-toggle-label>i {
+        display: none;
+    }
+    
+    #logo {
+        font-size: 400%;
+    }
+    
+    .nav-menu-list a:hover {
+        border-bottom: 2px solid #ffffff;
+    }
+
     .question-div {
         display: flex;
         justify-content: space-evenly;
