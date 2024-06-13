@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap');
+/* Asterisk wildcard selector to override default styles added by the browser*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    background-color: hsl(283, 60%, 84%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans', san-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Header styles */
+header {
+    background-color: rgb(208, 122, 240);
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 4px 4px #ffffff;
+    justify-content: space-between;
+    align-items: baseline;
+    border-radius: 0;
+    letter-spacing: 0.1rem;
+    padding-bottom: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(52, 15, 66);
+}
+
+#logo {
+    color: rgb(38, 22, 44);
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 300%;
+}
+
+/* Nav bar styles */
+.nav-menu-list {
+    font-size: 120%;
+    list-style-type: none;
+    letter-spacing: 1px;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: rgb(208, 122, 240);
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #ffffff;
+    display: none;
+    top: 100%;
+}
+
+/* Nav Toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 200%;
+}
+
+main {
+    margin-top: 65px;
+}
+
+/* Landing page styles */
+/* Question section */
+.question-div {
+    background-color: rgb(52, 15, 66);
+    margin: 5%;
+    padding: 5%;
+    border-radius: 20px;
+}
+
+.question-div h1 {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 150%;
+    color: #ffffff;
+}
+
+.q-button-div {
+    justify-content: center;
+}
+
+.landing-button {
+    background-color: rgb(52, 15, 66);
+    color: white;
+    padding: 3% 5%;
+    border: 2px solid rgb(154, 41, 196);
+    border-radius: 5px;
+}
+
+/* STD section */
+.std-card-container {
+    margin: 5%;
+}
+
+.std-card {
+    margin: 5%;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 3%;
+}
+
+.red {
+    background-color: rgb(237, 79, 79);
+}
+
+.orange {
+    background-color: rgb(235, 162, 74);
+}
+
+.yellow {
+    background-color: rgb(237, 237, 99);
+}
+.green {
+    background-color: rgb(149, 232, 127);
+}
+
+.blue {
+    background-color: rgb(109, 116, 237);
+}
+
+/* Footer Styles*/
+footer {
+    text-align: center;
+    background-color: rgb(208, 122, 240);
+    border-radius: 0px;
+    margin-top: auto;
+}
+
+footer div {
+    padding-top: 2%;
+}
+
+#socialmedia-icons {
+    flex-flow: row-wrap;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 1% 8% 1% 4%;
+}
+
+#footer-email {
+    padding-top: 3%;
+}
+
+#socialmedia-icons i {
+    color: black;
+}
+
+#socialmedia-icons a {
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 180%;
+    margin: 4px 2px;
+    border-radius: 10px;
+}
+
+#footer-email a {
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#socialmedia-icons i:hover,
+#footer-email a:hover {
+    color: white;
+    font-size: 150%;
+}
+
+/* Media query: landscape phones(576px and up)*/
+@media screen and (min-width: 576px) {
+    .big-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #footer-about {
+        max-width: 33%;
+    }
+}
+
+/* Media query: tablets (768px and up)*/
+@media screen and (min-width: 768px) {
+    .question-div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+/* Media query: laptops (992px and up)*/
+@media screen and (min-width: 992px) {
+    .std-card-container {
+        display: flex;
+        margin: 1%;
+    }
+
+    .std-card {
+        margin: 1%;
+    }
+}
