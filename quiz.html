@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Questionnaire</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #question {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    #score {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="question"></div>
+  <button id="yes">Yes</button>
+  <button id="no">No</button>
+  <div id="recommendation"></div>
+  <div id="score"></div>
+
+  <script>
+    const questions = [
+      {
+        text: "Do you have any symtoms of an STD?",
+        yes: 1,
+        no: 6
+      },
+      {
+        text: "1a. Have you experienced any discharge from your genitals (vagina, penis, or urethra) that is different in color (yellow, green), consistency (thick), or smell (unpleasant)?",
+        yes: 2,
+        no: 2
+      },
+      {
+        text: "1b. Have you experienced any pain or discomfort during vaginal and/or anal sex??",
+        yes: 3,
+        no: 3
+      },
+      {
+        text: "1c. Have you noticed any sores, bumps, or white patches on your mouth, tongue, or throat?",
+        yes: 4,
+        no: 4
+      },
+      {
+        text: "1d. Have you experienced any bleeding, pain, or itching around your anus after anal sex?",
+        yes: 5,
+        no: 5
+      },
+      {
+        text: "1e. Have you noticed any unusual growths or lesions in the genital, anal, or upper thigh areas?",
+        yes: 6,
+        no: 6
+      },
+      {
+        text: "2. Did you have a sexual encounter (vaginal, anal or oral sex) during past 3 months?",
+        yes: 7,
+        no: 10
+      },
+      {
+        text: "2a. Is the STD status of your recent partner unknown?",
+        yes: 11,
+        no: 8
+      },
+      {
+        text: "2b. Where you unprotected? Not using a condom (internal or external) consistently during all recent encounters?",
+        yes: 11,
+        no: 11
+      },
+      // {
+      //   text: "Are you currently using PrEP (Pre-Exposure Prophylaxis) for HIV prevention?",
+      //   yes: 10,
+      //   no: 10
+      // }
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+
+    function displayQuestion() {
+      const question = questions[currentQuestion];
+      document.getElementById("question").textContent = question.text;
+    }
+
+    function handleAnswer(answer) {
+      const question = questions[currentQuestion];
+      if (answer === "yes") {
+        score++;
+        currentQuestion = question.yes;
+      } else {
+        currentQuestion = question.no;
+      }
+
+      if (currentQuestion === 10) {
+        displayScore();
+      } else {
+      if (currentQuestion === 11) {
+        displayRecommendation();
+      } else {
+        displayQuestion();
+      }
+    }
+  }
+    function displayScore() {
+      document.getElementById("question").textContent = "Thank you for participating!";
+      document.getElementById("score").textContent = `Your score: ${score}`;
+      document.getElementById("yes").style.display = "none";
+      document.getElementById("no").style.display = "none";
+    }
+    
+    function displayRecommendation() {
+      document.getElementById("question").textContent = "Thank you for participating!";
+      document.getElementById("score").textContent = `Your score: ${score}`;
+      document.getElementById("recommendation").textContent = `This is the recommendation`;
+      document.getElementById("yes").style.display = "none";
+      document.getElementById("no").style.display = "none";
+    }
+
+    displayQuestion();
+
+    document.getElementById("yes").addEventListener("click", () => handleAnswer("yes"));
+    document.getElementById("no").addEventListener("click", () => handleAnswer("no"));
+  </script>
+</body>
+</html>
