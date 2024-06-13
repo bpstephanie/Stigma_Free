@@ -1,0 +1,86 @@
+/*.about-us {
+    margin-top: 100px;
+}*/
+/*
+
+.id-cards {
+
+    
+    width: 25%;
+}*/
+.team-header {
+    font-family: 'Poetsen One', cursive;
+    font-size: 200%;
+    text-align: center;
+    padding: 3%;
+    margin: 2% 3%;
+}
+.id-cards {
+    background-color: #EBA24A;
+    margin: auto;
+    margin-bottom: 5%;
+    padding: 1%;
+    border-radius: 10px;
+    border: 1px solid #905104;
+    overflow: hidden;
+    height: 500px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.id-cards h2 {
+    font-family: 'Poetsen One', cursive;
+    text-align: center;
+}
+
+.team-icons {
+        flex-flow: row-wrap;
+        list-style-type: none;
+        justify-content: space-evenly;
+        padding: 1% 8% 1% 4%;
+}
+
+.team-icons a {
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 180%;
+    margin: 4px 2px;
+    border-radius: 10px;
+}
+
+/* Media query: landscape phones(576px and up)*/
+@media screen and (min-width: 576px) {
+    .team-header {
+        font-size: 300%;
+    }
+
+    .id-card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .id-cards {
+       width: 300px;
+       margin: 5%;
+    }
+}
+
+/* Media query: tablets (768px and up)*/
+@media screen and (min-width: 768px) {
+
+}
+
+/* Media query: desktops (1200px and up)*/
+@media screen and (min-width: 1200px) {
+    .team-header {
+        font-size: 300%;
+    }
+}
+
