@@ -399,18 +399,24 @@ footer {
 .footer-container {
   width: 100%;
   max-width: 1200px;
-  display: flex;
+  /*display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;*/
   margin: 0 auto;
   padding: 0 50px;
   box-sizing: border-box;
 }
 
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .footer-menu-list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 5%;
   display: flex;
 }
 
@@ -432,8 +438,10 @@ footer {
 .copyright {
   color: #666;
   font-size: 14px;
+  text-align: center;
+  padding-top: 1%;
 }
- /* Steph */
+
 .socialmedia-icons {
   display: flex;
   flex-flow: row-wrap;
@@ -450,6 +458,8 @@ footer {
   font-size: 150%;
   margin: 4px 2px;
 }
+
+
 
 /* Media query for small screens */
 @media (max-width: 768px) {
