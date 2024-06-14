@@ -361,6 +361,12 @@ nav {
 }
 
 /* Team page styles */
+.about-us {
+  font-size: 200%;
+  padding: 2% 5%;
+  letter-spacing: 0.08rem;
+}
+
 .box a {
   border: none;
   color: black;
