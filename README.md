@@ -8,12 +8,12 @@
 ## Meet the Development Team
 * [Jad Nehmeh](https://www.linkedin.com/in/jnehmeh/)
     * Scrum Master, Code Institute Alumni.*
-* [Johan Plym Arkert](https://www.linkedin.com/in/)
+* [Johan Plym Arkert](https://www.linkedin.com/in/johan-plym-arkert/)
     * Code Institute Student.*
 * [Stephanie Bell](https://www.linkedin.com/in/stephanie-bell-529a362b/)
     * Code Institute Student.*
 * [Amir Shkolnik](https://www.linkedin.com/in/amirshkolnik/)
-    * Code Institute.*
+    * Code Institute Student.*
 * [Sophie Tigerholm](https://www.linkedin.com/in/)
     * Code Institute Student.*
 * [Alexander Åberg](https://www.linkedin.com/in/alexander-åberg)
@@ -235,17 +235,13 @@ I have tested on Chrome, Firefox and Edge without a problem, checked on many dif
 
 Favicon from  <a href="https://www.freepik.com/icon/herbal-tea_10812632#fromView=search&page=1&position=54&uuid=24e50b5d-d56e-4b71-a971-f5a242ddc937">Icon by Satawat Anukul</a> and generated through https://favicon.io/favicon-converter/ 
 
-- Both got code and got inspired by Code Institutes Love Running Project and Coders Coffeehouse Project, including header and nav-menu.
-- Also got help, inspiration and support from my mentor Rory Patrick and help with code from a few Tutors at Code Institute.
-- Got inspiration and some help from our Slack Team Group especially Lorenz.
-- Template for this README is taken from Love Running and from my mentors project Horizon.
+- STI information from 1177, RFSL, NHS and internetmedicin.se
 
 
 ### Content 
 
-- Information is taken from tea pages and Wikipedia during the years.
-- All html and css was taken from the Code Institute education, big part from Love Running, Coders Coffeehouse and their Tutors
-- The icons in the footer and the menu-bar were taken from [Font Awesome](https://fontawesome.com/)
+- STI information from 1177, RFSL, NHS and internetmedicin.se
+
 
 ### Media
 
