@@ -33,14 +33,29 @@
   <header>
     <div class="nav-container flex">
       <a href="index.html" class="logo">
-        <img src="assets/css/image-logo/logo-1.jpg" alt="STIgma FREE Logo">
+        <img src="assets/css/image-logo/logo-1.jpg" alt="STIgma FREE Logo" />
       </a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle">
-      <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <i class="fa-solid fa-bars"></i>
+      </label>
       <nav class="nav-menu">
         <ul class="nav-menu-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="info.html">Info</a></li>
+          <li class="dropdown">
+            <a href="">Info</a>
+            <ul class="dropdown-menu">
+              <li><a href="chlamydia.html">Chlamydia</a></li>
+              <li><a href="gonorrhea.html">Gonorrhea</a></li>
+              <li><a href="hsv.html">HSV</a></li>
+              <li><a href="hpv.html">HPV</a></li>
+              <li><a href="hep-bc.html">Hepatitis B and C</a></li>
+              <li><a href="trihomoniasis.html">Trichomoniasis</a></li>
+              <li><a href="hep-a.html">Hepatitis A</a></li>
+              <li><a href="bv.html">BV</a></li>
+              <li><a href="hiv.html">HIV</a></li>
+            </ul>
+          </li>
           <li><a href="quiz.html">Questionnaire</a></li>
           <li><a href="team.html">Team</a></li>
         </ul>
@@ -67,7 +82,7 @@
       </div>
 
       <div class="box" id="std_page">
-        <h2>Trihonmoniasis</h2>
+        <h2>Trichonmoniasis</h2>
         <br>
         <h3>Description</h3>
         <p>
@@ -143,8 +158,12 @@
         <br>
         <br>
         <div id="navigation">
+          <form action="hep-bc.html">
           <button class="previous-std">HEPATITIS B&C</button>
-          <button class="next-std">BAACTERIAL VAGINOSIS (BV)</button>
+        </form>
+        <form action="bv.html">
+          <button class="next-std">BACTERIAL VAGINOSIS (BV)</button>
+        </form>
         </div>
       </div>
     </div>
@@ -152,14 +171,34 @@
   </div>
   <footer>
     <div class="footer-container">
-      <ul class="footer-menu-list">
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Connect With Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-      <div class="copyright">&copy; 2023 STIgma Free. All rights reserved.</div>
+        <div class="footer-links">
+            <ul class="footer-menu-list">
+                <div>
+                    <li>Connect With Us</li>
+                    <ul class="socialmedia-icons" class="flex">
+                        <li><a href="https://www.facebook.com/" target="_blank"
+                                aria-label="Visit our Facebook page (opens in new tab)" rel="noopener"><i
+                                    class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.twitter.com/" target="_blank"
+                                aria-label="Visit our Twitter page (opens in new tab)" rel="noopener"><i
+                                    class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"
+                                aria-label="Visit our Instagram page (opens in new tab)" rel="noopener"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <li>Contact Us</li>
+                    <ul class="socialmedia-icons" class="flex">
+                        <li><a href="mailto:info@stigmafree.co.uk" aria-label="Send us an email"><i
+                                    class="fa-regular fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <div class="copyright">&copy; 2023 STIgma Free. All rights reserved.</div>
     </div>
-  </footer>
+</footer>
 
   <script>
     document.querySelector(".quiz-button").addEventListener("click", () => {
