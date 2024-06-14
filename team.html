@@ -1,66 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Meta tags for search engines -->
-    <meta name="description" content="STIgma Free. Verified and up-to-date information about sexual health for the LGBTQIA+
-        community.">
-    <meta name="keywords" content="stigma, sexual health, lgbtqia+, health, information">
-    <!-- Fontawesome-->
-    <script src="https://kit.fontawesome.com/6bd427a7f6.js" crossorigin="anonymous"></script>
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/teamstyle.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Meta tags for search engines -->
+        <meta name="description" content="STIgma Free. Verified and up-to-date information about sexual health for the LGBTQIA+
+            community.">
+        <meta name="keywords" content="stigma, sexual health, lgbtqia+, health, information">
+        <!-- Fontawesome-->
+        <script src="https://kit.fontawesome.com/6bd427a7f6.js" crossorigin="anonymous"></script>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        
     <title>STIgma Free</title>
+    <link rel="stylesheet" href="assets/css/style_amir.css">
 </head>
 <body>
-    <header class="flex">
-        <a href="index.html">
-            <h1 id="logo">STIgma FREE</h1>
-        </a>
-        <div>
-            <input type="checkbox" id="nav-toggle" name="nav-toggle">
+    <header>
+        <div class="nav-container flex">
+            <a href="index.html" class="logo">
+                <img src="assets/css/image-logo/logo-1.jpg" alt="STIgma FREE Logo">
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
-            <nav>
+            <nav class="nav-menu">
                 <ul class="nav-menu-list">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="info.html">Info</a>
-                    </li>
-                    <li>
-                        <a href="quiz.html">Questionnaire</a>
-                    </li>
-                    <li>
-                        <a href="team.html">Team</a>
-                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="quiz.html">Questionnaire</a></li>
+                    <li><a href="team.html">Team</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="about-us">
+        <section class="box">
             <h1>About Us</h1>
             <p>Welcome to STIgma Free. Here at STIgma FREE, we are on a mission to provide sexual health
                  information to the LGBTQIA+ community. We make sure all information is fact checked and 
                  verified because misinformation is dangerous. We want our users to feel safe and heard.</p>
         </section>
         <section class="team-section">
-            <h2 class="team-header">Team Chlamydia!! Members</h2>
+            <h2 class="team-header">The Stdout Squad Members</h2>
             <div class="id-card-container">
-                <div class="id-cards">
+                <div class="box">
                     <h2>Alexander Åberg</h2>
                     <p></p>
-                    <ul class="team-icons flex">
+                    <ul class="socialmedia-icons">
                         <li><a href="linkedin.com/in/alexander-åberg" target="_blank"
                             aria-label="Visit my LinkedIn page (opens in new tab)" rel="noopener">
                             <i class="fa-brands fa-linkedin"></i></a>
@@ -73,11 +62,11 @@
                     </ul>
                 </div>
 
-                <div class="id-cards">
+                <div class="box">
                     <h2>Amir Shkolnik</h2>
                     <img src="assets/images/amir-profile.webp" class="team-pic" height="200px" width="200px" alt="Image of Amir">
                     <p></p>
-                    <ul class="team-icons flex">
+                    <ul class="socialmedia-icons">
                         <li><a href="https://www.linkedin.com/in/amirshkolnik/" target="_blank"
                             aria-label="Visit my LinkedIn page (opens in new tab)" rel="noopener">
                             <i class="fa-brands fa-linkedin"></i></a>
@@ -90,12 +79,12 @@
                     </ul>
                 </div>
 
-                <div class="id-cards">
+                <div class="box">
                     <h2>Jad Nehmeh</h2>
                     <img src="assets/images/jad-team.jpg" class="team-pic" height="200px" width="200px" alt="Image of Jad">
                     <p>A Filmmaker, Beauty advisor and Full-Stack Developer, and yes I am doing it all. Very driven person
                         to achieve new goals in life.</p>
-                    <ul class="team-icons flex">
+                        <ul class="socialmedia-icons">
                         <li><a href="https://www.linkedin.com/in/jnehmeh/" target="_blank"
                             aria-label="Visit my LinkedIn page (opens in new tab)" rel="noopener">
                             <i class="fa-brands fa-linkedin"></i></a>
@@ -108,12 +97,12 @@
                     </ul>
                 </div>
 
-                <div class="id-cards">
+                <div class="box">
                     <h2>Johan Plym Arkert</h2>
                     <img src="assets/images/johan-profile.webp" class="team-pic" height="200px" width="200px" alt="Image of Johan">
                     <p></p>
-                    <ul class="team-icons flex">
-                        <li><a href="" target="_blank"
+                    <ul class="socialmedia-icons">
+                        <li><a href="https://www.linkedin.com/in/johan-plym-arkert/" target="_blank"
                             aria-label="Visit my LinkedIn page (opens in new tab)" rel="noopener">
                             <i class="fa-brands fa-linkedin"></i></a>
                         </li>
@@ -125,12 +114,12 @@
                     </ul>
                 </div>
 
-                <div class="id-cards">
+                <div class="box">
                     <h2>Sophie Tigerholm</h2>
                     <img src="assets/images/sophie-profile.webp" class="team-pic" height="200px" width="200px" alt="Image of Sophie">
                     <p></p>
-                    <ul class="team-icons flex">
-                        <li><a href="" target="_blank"
+                    <ul class="socialmedia-icons">
+                        <li><a href="https://www.linkedin.com/in/sophie-tigerholm-9349a4aa/" target="_blank"
                             aria-label="Visit my LinkedIn page (opens in new tab)" rel="noopener">
                             <i class="fa-brands fa-linkedin"></i></a>
                         </li>
@@ -142,13 +131,13 @@
                     </ul>
                 </div>
 
-                <div class="id-cards">
+                <div class="box">
                     <h2>Stephanie Bell</h2>
                     <img src="assets/images/steph-profile.webp" class="team-pic" height="200px" width="200px" alt="Image of Stephanie">
                     <p>A former ESL Teacher, I am currently studying Full Stack Development with Code Institute. 
                         I find programming both challenging and enjoyable and can't wait to keep developing my 
                         skills.</p>
-                    <ul class="team-icons flex">
+                        <ul class="socialmedia-icons">
                         <li><a href="https://www.linkedin.com/in/stephanie-bell-529a362b/" target="_blank"
                             aria-label="Visit my LinkedIn page (opens in new tab)" rel="noopener">
                             <i class="fa-brands fa-linkedin"></i></a>
@@ -164,17 +153,12 @@
             </div>
         </section>
     </main>
-    
     <footer>
-        <div class="big-flex">
+        <div class="footer-container">
+          <ul class="footer-menu-list">
             <div>
-                <h3>Contact Us</h3>
-                <p id="footer-email">Email: <a href="mailto:info@stigmafree.co.uk"
-                        aria-label="Send us an email">info@stigmafree.co.uk</a></p>
-            </div>
-            <div>
-                <h3>Connect with Us</h3>
-                <ul id="socialmedia-icons" class="flex">
+                <li><a href="#">Connect With Us</a></li>
+                <ul class="socialmedia-icons" class="flex">
                     <li><a href="https://www.facebook.com/" target="_blank"
                             aria-label="Visit our Facebook page (opens in new tab)" rel="noopener"><i
                                 class="fa-brands fa-facebook-f"></i></a></li>
@@ -186,14 +170,13 @@
                                 class="fa-brands fa-instagram"></i></a></li>
                 </ul>
             </div>
-            <div id="footer-about">
-                <h3>About Us</h3>
-                <p>STIgma FREE provides verified and up-to-date information about sexual health for the LGBTQIA+
-                    community.</p>
+            <div>
+            <li><a href="mailto:info@stigmafree.co.uk"
+                aria-label="Send us an email">Contact Us</a></li>
             </div>
+          </ul>
+          <div class="copyright">&copy; 2023 STIgma Free. All rights reserved.</div>
         </div>
-        <hr>
-        <p>© Copyright 2024 STIgma FREE. All rights reserved.</p>
-    </footer>
+      </footer>
 </body>
 </html>
