@@ -1,290 +1,326 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Meta tags for search engines -->
-  <meta name="description" content="STIgma Free. Verified and up-to-date information about sexual health for the LGBTQIA+
-      community.">
-  <meta name="keywords" content="stigma, sexual health, lgbtqia+, health, information">
-  <!-- Fontawesome-->
-  <script src="https://kit.fontawesome.com/6bd427a7f6.js" crossorigin="anonymous"></script>
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>STIgma Free</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Meta tags for search engines -->
+      <meta
+        name="description"
+        content="STIgma Free. Verified and up-to-date information about sexual health for the LGBTQIA+
+              community."
+      />
+      <meta
+        name="keywords"
+        content="stigma, sexual health, lgbtqia+, health, information"
+      />
+      <!-- Fontawesome-->
+      <script
+        src="https://kit.fontawesome.com/6bd427a7f6.js"
+        crossorigin="anonymous"
+      ></script>
+      <!-- Favicon -->
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="assets/favicon/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="assets/favicon/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="assets/favicon/favicon-16x16.png"
+      />
 
-    #question-container {
-      border: 1px solid #ddd;
-      padding: 15px;
-      margin-bottom: 20px;
-      width: 800px;
-      height: 300px;
-      display: inline-block;
-    }
+      <title>STIgma Free</title>
+      <link rel="stylesheet" href="assets/css/style_amir.css" />
+      <style>
 
-    #question {
-      font-size: 25px;
-      padding-top: 50px;
-      height: 100px;
-      margin: 40px;
-      margin-bottom: 10px;
-      margin-top: auto;
-      color: #ffffff;
-      text-transform: uppercase;
-    }
+        main {
+          flex: 1; /* This allows the main content to grow and push the footer down */
+        }
 
-    #recommendation {
-      font-size: 25px;
-      color: #7a3927;   
-      text-transform: uppercase;
-    }
+        footer {
+          margin-top: auto;
+        }
 
-    #buttons {
-      text-align: center;
-      margin: 80px;
-    }
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          margin: 0;
+        }
 
-    button {
-      margin: 5px;
-      font-size: large;
-      padding: 10px 20px;
-      border: 2px solid #ddd;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+        #question-container {
+          border: 1px solid #ddd;
+          padding: 15px;
+          margin-bottom: 20px;
+          width: 800px;
+          height: 300px;
+          display: inline-block;
+        }
 
-    #yes.clicked {
-      background-color: rgba(255, 0, 0, 0.526); /* Red for clicked yes button */
-    }
+        #question {
+          font-size: 25px;
+          padding-top: 50px;
+          height: 100px;
+          margin: 40px;
+          margin-bottom: 10px;
+          margin-top: auto;
+          text-transform: uppercase;
+        }
 
-    #no.clicked {
-      background-color: rgba(0, 128, 0, 0.545); /* Green for clicked no button */
-    }
+        #recommendation {
+          font-size: 25px;
+          color: #7a3927;
+          text-transform: uppercase;
+        }
 
-    #score {
-      font-size: 18px;
-      margin-top: 20px;
-    }
+        #buttons {
+          text-align: center;
+          margin: 80px;
+        }
 
-    .hidden {
-      display: none;
-    }
-  </style>
-</head>
-<body>
-  <header class="flex">
-    <a href="index.html">
-        <h1 id="logo">STIgma FREE</h1>
-    </a>
-    <div>
-        <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
-        <nav>
+        button {
+          margin: 5px;
+          font-size: large;
+          padding: 10px 20px;
+          border: 2px solid #ddd;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        #yes.clicked {
+          background-color: rgba(
+            255,
+            0,
+            0,
+            0.526
+          ); /* Red for clicked yes button */
+        }
+
+        #no.clicked {
+          background-color: rgba(
+            0,
+            128,
+            0,
+            0.545
+          ); /* Green for clicked no button */
+        }
+
+        #score {
+          font-size: 18px;
+          margin-top: 20px;
+        }
+
+        .hidden {
+          display: none;
+        }
+      </style>
+    </head>
+    <body>
+      <header>
+        <div class="nav-container flex">
+          <a href="index.html" class="logo">
+            <img
+              src="assets/css/image-logo/logo-1.jpg"
+              alt="STIgma FREE Logo"
+            />
+          </a>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+          <label for="nav-toggle" class="nav-toggle-label"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+          <nav class="nav-menu">
             <ul class="nav-menu-list">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="info.html">Info</a>
-                </li>
-                <li>
-                    <a href="quiz.html">Questionnaire</a>
-                </li>
-                <li>
-                    <a href="team.html">Team</a>
-                </li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="info.html">Info</a></li>
+              <li><a href="quiz.html">Questionnaire</a></li>
+              <li><a href="team.html">Team</a></li>
             </ul>
-        </nav>
-    </div>
-  </header>
-  <section>
-    <div class="question-div" id="question-container">
-      <div id="question"></div>
-      <div id="recommendation"></div>
-      <div id="buttons">
-        <button id="yes">Yes</button>
-        <button id="no">No</button>
+          </nav>
+        </div>
+        <main>
+      </header>
+      <div class="container">
+        <div class="box-container">
+          <div class="box">
+            <div id="question"></div>
+            <div id="recommendation"></div>
+            <div id="buttons">
+              <button id="yes">Yes</button>
+              <button id="no">No</button>
+            </div>
+            <div class="book-div"></div>          
+          </div>
+        </div>
+        <div id="navigation">
+          <button id="info">Read more about STDs!</button>
+          <button id="team">Checkout our team</button>
+        </div>
       </div>
-    </div>
-    <div id="navigation">
-      <button id="info">Read more about STDs!</button>
-      <button id="team">Checkout our team</button>
-    </div>
-  </section>
 
-  <footer>
-    <div class="big-flex">
-        <div>
-            <h3>Contact Us</h3>
-            <p id="footer-email">Email: <a href="mailto:info@stigmafree.co.uk"
-                    aria-label="Send us an email">info@stigmafree.co.uk</a></p>
+    </main>
+      <footer>
+        <div class="footer-container">
+          <ul class="footer-menu-list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Connect With Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="copyright">
+            &copy; 2023 STIgma Free. All rights reserved.
+          </div>
         </div>
-        <div>
-            <h3>Connect with Us</h3>
-            <ul id="socialmedia-icons" class="flex">
-                <li><a href="https://www.facebook.com/" target="_blank"
-                        aria-label="Visit our Facebook page (opens in new tab)" rel="noopener"><i
-                            class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="https://www.twitter.com/" target="_blank"
-                        aria-label="Visit our Twitter page (opens in new tab)" rel="noopener"><i
-                            class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"
-                        aria-label="Visit our Instagram page (opens in new tab)" rel="noopener"><i
-                            class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </div>
-        <div id="footer-about">
-            <h3>About Us</h3>
-            <p>STIgma FREE provides verified and up-to-date information about sexual health for the LGBTQIA+
-                community.</p>
-        </div>
-    </div>
-    <hr>
-    <p>© Copyright 2024 STIgma FREE. All rights reserved.</p>
-  </footer>
+      </footer>
 
-  <script>
-    const questions = [
-    {
-        text: "Do you have any symtoms of an STD?",
-        yes: 1,
-        no: 6
-      },
-      {
-        text: "1a. Have you experienced any discharge from your genitals (vagina, penis, or urethra) that is different in color (yellow, green), consistency (thick), or smell (unpleasant)?",
-        yes: 2,
-        no: 2
-      },
-      {
-        text: "1b. Have you experienced any pain or discomfort during vaginal and/or anal sex??",
-        yes: 3,
-        no: 3
-      },
-      {
-        text: "1c. Have you noticed any sores, bumps, or white patches on your mouth, tongue, or throat?",
-        yes: 4,
-        no: 4
-      },
-      {
-        text: "1d. Have you experienced any bleeding, pain, or itching around your anus after anal sex?",
-        yes: 5,
-        no: 5
-      },
-      {
-        text: "1e. Have you noticed any unusual growths or lesions in the genital, anal, or upper thigh areas?",
-        yes: 6,
-        no: 6
-      },
-      {
-        text: "2. Did you have a sexual encounter (vaginal, anal or oral sex) during past 3 months?",
-        yes: 7,
-        no: 9
-      },
-      {
-        text: "2a. Is the STD status of your recent partner unknown?",
-        yes: 8,
-        no: 13
-      },
-      {
-        text: "2b. Where you unprotected? Not using a condom (internal or external) consistently during all recent encounters?",
-        yes: 9,
-        no: 13
-      },
-      {
-        text: "3. Are you currently using PrEP (Pre-Exposure Prophylaxis) for HIV prevention?",
-        yes: 10,
-        no: 13
-      },
-      {
-        text: "4. Has it been more than 3 months since last STD test (Including HIV)?",
-        yes: 13,
-        no: 13
-      },
-    ];
+      <script>
+        const questions = [
+          {
+            text: "Do you have any symtoms of an STD?",
+            yes: 1,
+            no: 6,
+          },
+          {
+            text: "1a. Have you experienced any discharge from your genitals (vagina, penis, or urethra) that is different in color (yellow, green), consistency (thick), or smell (unpleasant)?",
+            yes: 2,
+            no: 2,
+          },
+          {
+            text: "1b. Have you experienced any pain or discomfort during vaginal and/or anal sex??",
+            yes: 3,
+            no: 3,
+          },
+          {
+            text: "1c. Have you noticed any sores, bumps, or white patches on your mouth, tongue, or throat?",
+            yes: 4,
+            no: 4,
+          },
+          {
+            text: "1d. Have you experienced any bleeding, pain, or itching around your anus after anal sex?",
+            yes: 5,
+            no: 5,
+          },
+          {
+            text: "1e. Have you noticed any unusual growths or lesions in the genital, anal, or upper thigh areas?",
+            yes: 6,
+            no: 6,
+          },
+          {
+            text: "2. Did you have a sexual encounter (vaginal, anal or oral sex) during past 3 months?",
+            yes: 7,
+            no: 9,
+          },
+          {
+            text: "2a. Is the STD status of your recent partner unknown?",
+            yes: 8,
+            no: 13,
+          },
+          {
+            text: "2b. Where you unprotected? Not using a condom (internal or external) consistently during all recent encounters?",
+            yes: 9,
+            no: 13,
+          },
+          {
+            text: "3. Are you currently using PrEP (Pre-Exposure Prophylaxis) for HIV prevention?",
+            yes: 10,
+            no: 13,
+          },
+          {
+            text: "4. Has it been more than 3 months since last STD test (Including HIV)?",
+            yes: 13,
+            no: 13,
+          },
+        ];
 
-    let currentQuestion = 0;
-    let score = 0;
-    let backgroundColor = "rgba(52, 15, 66, 0.399)"; // Initial background color
+        let currentQuestion = 0;
+        let score = 0;
+        let backgroundColor = "rgba(52, 15, 66, 0.399)"; // Initial background color
 
-    function displayQuestion() {
-      const question = questions[currentQuestion];
-      document.getElementById("question").textContent = question.text;
-      document.getElementById("question-container").style.backgroundColor = backgroundColor;
-      // Reset button click styles
-      document.getElementById("yes").classList.remove("clicked");
-      document.getElementById("no").classList.remove("clicked");
-    }
+        function displayQuestion() {
+          const question = questions[currentQuestion];
+          document.getElementById("question").textContent = question.text;
+          // document.getElementById("question-container").style.backgroundColor =
+          //   backgroundColor;
+          // Reset button click styles
+          document.getElementById("yes").classList.remove("clicked");
+          document.getElementById("no").classList.remove("clicked");
+        }
 
-    function handleAnswer(answer) {
-      const question = questions[currentQuestion];
-      if (answer === "yes") {
-        score++;
-        currentQuestion = question.yes;
-        // Update background color based on answer and current color
-        backgroundColor = answer === "yes" ? "rgba(66, 15, 24, 0.399)" : backgroundColor;
-      } else {
-        currentQuestion = question.no;
-        // Update background color based on answer and current color
-        backgroundColor = answer === "no" ? "rgba(16, 66, 15, 0.399)" : backgroundColor;
-      }
+        function handleAnswer(answer) {
+          const question = questions[currentQuestion];
+          if (answer === "yes") {
+            score++;
+            currentQuestion = question.yes;
+            // Update background color based on answer and current color
+            backgroundColor =
+              answer === "yes" ? "rgba(66, 15, 24, 0.399)" : backgroundColor;
+          } else {
+            currentQuestion = question.no;
+            // Update background color based on answer and current color
+            backgroundColor =
+              answer === "no" ? "rgba(16, 66, 15, 0.399)" : backgroundColor;
+          }
 
-      if (currentQuestion === 13) {
-        displayRecommendation();
-      } else {
+          if (currentQuestion === 13) {
+            displayRecommendation();
+          } else {
+            displayQuestion();
+          }
+
+          // Add clicked style to the chosen button
+          document.getElementById(answer).classList.add("clicked");
+        }
+
+        function displayRecommendation() {
+          document.getElementById("question").textContent =
+            "Thank you for participating!";
+          document.getElementById("buttons").classList.add("hidden");
+
+          let recommendation;
+          if (score >= 4) {
+            recommendation =
+              "**High Risk:** You need to book an appointment with a Dr.";
+          } else if (score === 3) {
+            recommendation =
+              "**Moderate Risk:** You can order a home kit for testing or book an appointment with a Dr.";
+          } else {
+            recommendation =
+              "**Low Risk:** The importance of safe sex and regular check ups. If you never done a check up please book your first appointment and know your status";
+          }
+
+          document.getElementById("question").textContent =
+            "Thank you for participating!";
+          document.getElementById("recommendation").textContent =
+            recommendation;
+        }
+
         displayQuestion();
-      }
-      
 
-      // Add clicked style to the chosen button
-      document.getElementById(answer).classList.add("clicked");
-    }
-    
-  function displayScore() {
-      document.getElementById("question-container").classList.add("hidden");
-      document.getElementById("buttons").classList.add("hidden");
-      document.getElementById("question").textContent = "Thank you for participating!";
-      document.getElementById("score").textContent = `Your score: ${score}`;
-    }
-    
-    function displayRecommendation() {
-      document.getElementById("question").textContent = "Thank you for participating!";
-      document.getElementById("buttons").classList.add("hidden");
-      
-      let recommendation;
-      if (score >= 4) {
-        recommendation = "**High Risk:** You need to book an appointment with a Dr.";
-      } else if (score === 3) {
-        recommendation = "**Moderate Risk:** You can order a home kit for testing or book an appointment with a Dr.";
-      } else {
-        recommendation = "**Low Risk:** The importance of safe sex and regular check ups. If you never done a check up please book your first appointment and know your status";
-      }
-      
-      document.getElementById("question").textContent = "Thank you for participating!";
-      document.getElementById("recommendation").textContent = recommendation;
-    }
+        document
+          .getElementById("yes")
+          .addEventListener("click", () => handleAnswer("yes"));
+        document
+          .getElementById("no")
+          .addEventListener("click", () => handleAnswer("no"));
 
-    displayQuestion();
-
-    document.getElementById("yes").addEventListener("click", () => handleAnswer("yes"));
-    document.getElementById("no").addEventListener("click", () => handleAnswer("no"));
-
-    // Navigation buttons
-    document.getElementById("info").addEventListener("click", () => {
-      window.location.href = "info.html";
-    });
-    document.getElementById("team").addEventListener("click", () => {
-      window.location.href = "team.html";
-    });
-  </script>
-</body>
+        // Navigation buttons
+        document.getElementById("info").addEventListener("click", () => {
+          window.location.href = "info.html";
+        });
+        document.getElementById("team").addEventListener("click", () => {
+          window.location.href = "team.html";
+        });
+      </script>
+    </body>
+  </html>
 </html>
