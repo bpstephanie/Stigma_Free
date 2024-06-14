@@ -166,23 +166,8 @@ nav {
   flex-grow: 1;
 }
 
-.box-bann {
-  width: 30%;
-  background-color: #ffffff;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: center;
-  margin: 30px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  min-height: 300px;
-}
-
 .box {
-  width: 30%;
+  width: 20%;
   background-color: #ffffff;
   padding: 20px;
   box-sizing: border-box;
@@ -389,6 +374,7 @@ footer {
 
 /* Media query for small screens */
 @media (max-width: 768px) {
+
   .nav-menu {
     display: none;
     flex-direction: column;
@@ -509,4 +495,6 @@ footer {
     margin: 0 auto;
     white-space: wrap;
   }
+ 
 }
+ 
