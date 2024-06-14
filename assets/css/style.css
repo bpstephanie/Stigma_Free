@@ -8,7 +8,7 @@
 
 /* General styles */
 body {
-    background-color: hsl(283, 60%, 84%);
+    background-color: hsl(284, 85%, 97%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -84,8 +84,8 @@ main {
 /* Landing page styles */
 /* Question section */
 .question-div {
-    background-color: rgb(52, 15, 66);
-    margin: 5%;
+    background-color: rgba(52, 15, 66, 0.399);
+    margin: 10%;
     padding: 5%;
     border-radius: 20px;
     box-shadow: 0 0 5px 5px white;
