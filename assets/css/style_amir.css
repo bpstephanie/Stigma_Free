@@ -576,3 +576,14 @@ footer {
   }
  
 }
+
+/* Media query for desktops */
+@media (min-width: 1200px) {
+  .box-container {
+    display: flex, flex-wrap, wrap;
+  }
+
+  .box {
+    flex-basis: 25%;
+  }
+}
