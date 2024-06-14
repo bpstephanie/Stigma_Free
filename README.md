@@ -43,7 +43,7 @@
 * [Content](content)
 * [Media](#media)
 * [Wireframe](#wireframe)
-* [Diagram](#diagram)
+* [Flowchart](#flowchart)
 * [Technologies Used](#github-projects)
 * [Colours & Text](#colours-text)
 * [Agile](#agile)
@@ -63,13 +63,13 @@
 # UX
 ### Visitor Goals
 The expected visitor is:
-- Visitors that wants to understand more about sexual health and sexual transmitted diseases.
-- Visitors that believe that they or someone else has a sexual transmitted disease.
-- Visitors that wants to get a suggestion about the next step for their sexual transmitted diseases
+- Visitors that wants to understand more about sexual health and sexual transmitted diseases and infections.
+- Visitors that believe that they or someone else has a sexual transmitted disease or infection.
+- Visitors that wants to get a suggestion about the next step for their sexual transmitted diseases and infections.
 
 Visitors goals are:
 - Read facts about the sexual transmitted diseases.
-- Go through the quiz to strenghtening or weakening the belief they or others are affected by a sexual transmitted disease.
+- Go through the quiz to strenghtening or weakening the belief they or others are affected by a sexual transmitted disease or infection.
 - Get suggestions what to do including tests and contacting health professionals.
 
 How STIgma Free fills the needs:
@@ -86,8 +86,8 @@ The Business Goals are:
 
 ### User Stories
 1. As a person with an active sex life I would want to protect my sexual health.
-0. I expect to be able to find out if I am in a risk of having an STI or not.
-0. I will be able to read up on STI's to prevent it from spreading to me.
+0. I expect to be able to find out if I am in a risk of having an STI or STD.
+0. I will be able to read up on STI's and STD's to prevent it from spreading to me.
 
 
 ### Existing Features
@@ -107,6 +107,7 @@ The Business Goals are:
 - __The landing page images__
 
   - The landing page or "Home" has a questionnare and some short information about the STI's with a button on each to read more, which will take them to the correct section in the info page. 
+  - It also have small pictures for each disease and infection and when you click them you get a bigger version.
 
 <img src="assets/images/landingpage.png" alt="Landing Page">
 
@@ -137,6 +138,15 @@ that we don't judge and the pastell version is to make it friendlier and more op
 to find out about infections in time.
 
 
+### Agile
+- We have worked agile to be able to adjust and fix issues that need to be prioritized.
+- High level of open communication mainly through slack.
+- The scope has changed during the course of the project according to the agile philosophy of it being most important with a good enough functioning product.
+
+### Kanban
+- Worked in a Kanban board on GitHub to see where we are with our features in the project.
+<img src="assets/images/kanban.png" alt='Kanban Board'>
+
 ### Google Sheets
 
 - Data is taken from https://docs.google.com/spreadsheets/d/1WbLvIHAxbtCMGZuvHieJsoPTi4rfxFQwe68zECg8iXQ/edit?gid=0#gid=0
@@ -162,23 +172,15 @@ to find out about infections in time.
   - No errors but 1 warning were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Falexanderaberg.github.io%2Fbattleship%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv) it got validated as CSS Stage 3 +SVG, the warning I ignore because I want the color and background-color to be the same, because I don't want the text to be seen before clicking a square!
 - JS
   - No errors was returned for JS, but 16 warnings, 8 undefined cariables and 3 unused variables when passing through the official [(Jigsaw) validator](https://jshint.com/) I will need to work on them in the future.
-- Python
-  - No errors were returned when passing through the official [PEP8 Python Validator](https://pep8ci.herokuapp.com/#).
 
 
 <img src="assets/images/validator-html.png" alt='Validator html'>
 <img src="assets/images/validator-css.png" alt='Validator css'>
 <img src="assets/images/validator-js.png" alt='Validator js'>
-<img src="assets/images/validator.png" alt='Validator Python'>
 
 ### Unfixed and fixed Bugs
 
-- Solved all known bugs, except for the blue background behind the submit button in the form on the Contact Us page on phones (tested on iPhone 13 Pro), it looks correct in Google Dev Tools.
-- I Had some issues with fixing the header and did it with the help of a tutor same thing with photos on larger screens which you can see in the css.
-- I did much trial and error with forms, pictures, header and footer and went through many colours on About Tea until my mentor suggested that I use the tea colour as background which made it possible to have text and background fit together better, I also did choose black as background for menu bar and contact form, the contact form I still wanted to see the background through which I sorted with the help of opacity.
-- I also got some help from my slack team for the header.
-
-- I would say that the header is by far what I had biggest problems with and the responsivness on larger screens for images on home.
+- Solved all known bugs.
 
 ### Quality Score through Google Devtools Lighthouse
 
@@ -202,76 +204,65 @@ to find out about infections in time.
   - In GitHub you can open every seperate file including html. css. images and even favicons and see the folder structure.
   - It is possible to check the commit history in github-pages under Deployment to the right
 
-  - Link to the live version of the project can be found here: - https://github.com/AlexanderAberg/Different-Coloured-Tea.git
+  - Link to the live version of the project can be found here: - https://johanplar.github.io/Stigma_Free/ and to the GitHub page here: https://github.com/JohanPlAr/Stigma_Free 
 
-  - The app was deployed to GitHub pages and Heroku. The steps to deploy are as follows: 
-  - Copy the repository from GitHub to your own GitHub to have it on your GitHub.
-  - Create a new app in Heroku, name it and choose your region before pushing button to create app.
-  - In the next page press settings, scroll down to Config Vars and pust the button, here you add CREDS in KEY and copy and paste everything inside creds.json to Value, 
-  you also add another var and put in PORT in KEY and 8000 in VALUE.
-  - You will now push Add buildpack just below Config Vars, there you choose Python and press the button to add it, you will get back to settings where you
-  press button to add buildpack again to add another buildpack and choose nodejs and add it also, make sure to have Python above nodejs in settings by moving it if needed.
-  - Now you go up to switch to Deploy in the tab and here you press the GitHub icon with the GitHub text to connect to GitHub and after that press Connect to GitHub button below.
-  - You will get a name choice where you choose your GitHub and search for the correct respository and then press connect.
-  - You will now be able to press Enable Automatic Deploys to make changes come automatically so do that, but press also Deploy Branch to get access already after about 30 seconds,
-  after the 30 seconds give or take depending on your internet speed and computer you can press view and now you have access to use the app.
-  - Now you will also be able to find the deployment in GitHub including all commits that was done after the deployment
-
-  - Link to the live version of the project can be found here: - https://strength-workout-app-d0e61c3ce59a.herokuapp.com/ and to the gitHub page here : https://github.com/AlexanderAberg/strength-workout-app
 
 
 ## Credits 
 
-Favicon from  <a href="https://www.freepik.com/icon/herbal-tea_10812632#fromView=search&page=1&position=54&uuid=24e50b5d-d56e-4b71-a971-f5a242ddc937">Icon by Satawat Anukul</a> and generated through https://favicon.io/favicon-converter/ 
+Favicon from  <a href="https://favicon.io/emoji-favicons/rainbow-flag/">Icon by John Sorrentino and open source project Twemoji.</a>
 
-- STI information from 1177, RFSL, NHS and internetmedicin.se
+- STI & STD information from 1177, RFSL, NHS and internetmedicin.se
 
 
 ### Content 
 
-- STI information from 1177, RFSL, NHS and internetmedicin.se
+- STI & STD information from 1177, RFSL, NHS and internetmedicin.se
 
 
 ### Media
 
-- The photos used on the home is from https://www.freepik.com black tea from https://www.freepik.com/author/8photo red and blue tea from https://www.freepik.com/author/azerbaijan-stockers Ooolong tea from https://www.freepik.com/author/jcomp green, white, yellow tea and icon for Favicon from the site owner and purple tea from https://bluetea.co.in/blogs/news/purple-tea-the-perfect-floral-tea# I have permission to use all of them for this project, and converted Favicon here https://favicon.io/favicon-converter/ 
-- Responsive mockup from https://ui.dev/amiresponsive?url=https://alexanderaberg.github.io/Different-Coloured-Tea/ 
+- The photos used on the home is from 
 
 ### Wireframe
 
-- Used Balsamiq for Wireframe, the Wireframe has some content that is missing in the project because of lack of time, see also Features Left to Implement in this README, the pictures became also better than expected so therefore will wireframe for home have more images on row and different setup than the actual project also the wireframe is not to scale especially computer.
+- Used Balsamiq for Wireframe and pen + paper.
 
-<img src="assets/images/wireframe-phone.png" alt="Wireframe for Phone">
-<img src="assets/images/wireframe-tablet.png" alt="Wireframe for Tablet">
-<img src="assets/images/wireframe-computer.png" alt="Wireframe for Computer">
+<img src="assets/images/manual-wireframe.jpg" alt="Wireframe on Paper">
+<img src="assets/images/wireframe-home.png" alt="Wireframe for Home">
+<img src="assets/images/wireframe-info.png" alt="Wireframe for Info">
+<img src="assets/images/wireframe-questionnaire.png" alt="Wireframe for Questionnaire">
+<img src="assets/images/wireframe-team.png" alt="Wireframe for Team">
 
-### Diagram
+### Flowchart
 
-- Used Lucid Chart for a diagram of how the app is supposed to be built up.
+- Flowchart made with pen and paper
+<img src="assets/images/manual-flowchart.jpg" alt="Flowchart on Paper">
 
-<img src="assets/images/lucid-chart.png" alt='Lucid Chart'>
 
 ### Technologies Used
 
 - HTML - For how the website with the pages is built and planned 
 - CSS - For all the styling
-- Images  - Freepik for Pictures except for purple tea that I got from bluetea mentioned in media
+- Images  - 
 - Fonts - From Google Fonts
 - Icons - From Fontawesome 
-- Education Tool- From the people at Codeinstitute
-- Wireframe - From Balsamiq 
-- Favicons - Icon from freepik and converted with Favicon.io
+- Wireframe - From Balsamiq + Pen & Paper
+- Flowchart - Pen & Paper
+- Favicons - Icon from Favicon.io
 - Mockup - Generated at amiresponsive 
-- Colours I mostly tested what fit together and got help from Lighthouse in Google dev tools to see if I should adjust further 
+- Rainbow colours inspired by LGTBQI+ community but made pastell to make them friendlier to the eyes
 - Google Devtools to check responsiveness and to check Lighthouse for Accessibility
 - GitHub for storing the project and deploying it
-- Gitpod for project development
+- Gitpod and Codespaces for project development
+- Slack for communication with the team
+- Google Sheets for information
 
 ### Colours & Text
 
-- Did choose dark colours for header, footer, menu etc. to fit with the pictures and wanted the background of the h2 in Home and the form in Contact Us to have opacity so you can see through without covering the images completely.
+- Did choose pastell colours that is colourfull according to rainbows
 - The colour for About Tea is pastel colour to make it friendlier to the eyes compared to sharp colours, the white and black doesn't really exist as pastel so I tried to make them friendlier also which you can see on the colours and in the css picture below.
-- Used Font style that is seperate between the logo, h1 and h2 compared to h3 and text with backup font for browsers without the font, the text colour in general is supposed to fit very well with the background colours that is why the background colour for tea has white text except for black that instead has white text.
+- Used Font style that is seperate between the logo, h1 and h2 compared to h3 and text with backup font for browsers without the font, the text colour in general is supposed to fit very well with the background colours.
 
 <img src="assets/images/colours.png" alt="Pastel Colours">
 <img src="assets/images/colours.png" alt="Pastel Colours">
