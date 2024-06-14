@@ -361,6 +361,12 @@ nav {
 }
 
 /* Team page styles */
+.about-us {
+  font-size: 200%;
+  padding: 2% 5%;
+  letter-spacing: 0.08rem;
+}
+
 .box a {
   border: none;
   color: black;
@@ -569,4 +575,15 @@ footer {
     white-space: wrap;
   }
  
+}
+
+/* Media query for desktops */
+@media (min-width: 1200px) {
+  .box-container {
+    display: flex, flex-wrap, wrap;
+  }
+
+  .box {
+    flex-basis: 25%;
+  }
 }
