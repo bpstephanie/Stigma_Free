@@ -163,24 +163,32 @@ main {
 /* Info page */
 
 #info-h1 {
-    padding-top: 5vh;
+    font-family: 'Poetsen One', sans-serif;
+    padding-top: 8vh;
     text-align: center;
     text-transform: uppercase;
+    width: 100%;
 }
 
 /* Overview classes and container */
 
 .infection-header {
+    font-family: 'Poetsen One', sans-serif;
     text-transform: uppercase;
     text-align: center;
 }
 
 .infection-container {
-    display: block;
+    display: flex;
+    width: 100%;
+    border: 5px solid pink;
+    padding: 5px;
+    margin: 2px;
+    flex-direction: column;
 }
 
 .infections {
-    display: flexbox
+    display: flexbox;
 }
 
 .infection-subheader {
@@ -232,7 +240,7 @@ main {
 }
 
 #hepatitis-a {
-    background-color: white;;
+    background-color: white;
 }
 
 #hepatitis-bc {

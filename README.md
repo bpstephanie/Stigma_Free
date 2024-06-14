@@ -72,23 +72,22 @@ Visitors goals are:
 - Go through the quiz to strenghtening or weakening the belief they or others are affected by a sexual transmitted disease.
 - Get suggestions what to do including tests and contacting health professionals.
 
-How STD Free fills the needs:
-- You can see the coloured tea on the pictures right at the landing page and also on the Contact Form.
-- About Tea has some short information about the different coloured tea.
-- The Contact Us page makes it possible to contact us.
-- Easy to reach everything form the header and you can find our social media in the footer, you also see the footer all the time.
+How STIgma Free fills the needs:
+- You can get information about different infections.
+- You can do a quiz to find out if you have an increased risk of being infected.
+- The page is easy to use to get the information you need and you get recommendations to get tests or contact health professionals.
 
 
 ### Business Goals
 The Business Goals are:
-- Spread awareness of the more uncommon tea colours.
-- Get in touch with other tea drinkers that are not satisfied with your normal tea.
-- If enough people will be aware the bigger chance that you will find the more rare tea in your city.
+- Spread awareness of sexually transmitted infections judgement free.
+- Get people to be able to contact our partners in the helath care industry.
+- If enough people will be aware the bigger chance that we will eradicate the infections.
 
 ### User Stories
-1. As a curious tea drinker I expect to find out about different kind of tea.
-0. I expect to get in touch with other people with my interest in more rare tea colours.
-0. I expect to be able to have a reference so I can spread awareness myself
+1. As a person with an active sex life I would want to protect my sexual health.
+0. I expect to be able to find out if I am in a risk of having an STI or not.
+0. I will be able to read up on STI's to prevent it from spreading to me.
 
 
 ### Existing Features
@@ -100,69 +99,59 @@ The Business Goals are:
 
 - __Navigation Bar__
 
-  - The navigation bar can be found on all 3 pages and is fully responsive, it will turn between a bar or buttons depending on the size of the screen.
+  - The navigation bar can be found on all pages and is fully responsive, it will turn between a bar or buttons depending on the size of the screen.
   - The bar will be visible even if you scroll down. 
 
 <img src="assets/images/navbar.png" alt="Nav bar">
 
 - __The landing page images__
 
-  - The landing page or "Home" has 8 different coloured tea on it, with 1-2 pictures in a row depending on screen size and it is fully responsive in image size also. 
-  - This page will make the visitor see all kind of colours on tea that they might not know that it existed.
+  - The landing page or "Home" has a questionnare and some short information about the STI's with a button on each to read more, which will take them to the correct section in the info page. 
 
 <img src="assets/images/landingpage.png" alt="Landing Page">
 
-- __About Tea__
+- __Info__
 
-  - About Tea page will give a short description of the different coloured tea. 
-  - I have put different coloured background behind every div related to a specific tea colour, it should be the same main colour as the tea but with a more friendly palette. 
+  - Info has information about different sexually transmitted infections.
 
 <img src="assets/images/abouttea.png" alt="About Tea">
 
-- __Contact Us__
+- __Team__
 
-  - The Contact Us page has a contact form and a background picture that is fully responsive. 
-  - The form has a background with an opacity to make it see through while still making the text easy to read. 
+  - The Team page has information about the team, with pictures, short quotes and links to LinkedIn and GitHub.
 
 <img src="assets/images/contactus.png" alt="Contact Us">
 
 - __The Footer__ 
 
-  - The footer can always be seen and has logos with links to Facebook, YouTube, Instagram and X. 
-  - The footer is both responsive and all the links works.
+  - The footer has contact information and a trademark.
 
 <img src="assets/images/footer.png" alt="Footer">
 
-### Thoughts behind my choices
+### Thoughts behind our choices
 
-- I wanted it to be easy with few choices, 1 to add workout and 2 to exit the app.
-- I wanted all 4 inputs to be connected to each other and therefore appear when previous is filled in.
-- I decided that Exercise should only have limitation on amount of characters and that I don't want it empty, so a value always exist even if
-it's just a space, it is still a real value, I didn't want to limit any kind of characters because some people might want to have a number or a
-special sign, even a space might be something you want but I want the user to atleast be active in choosing the space.
-- For sets, reps and weight I am forcing a number, because it must be a number even if it's 0, for example weight 0 can be your bodyweight, while
-0 reps could be that you can't complete a whole rep and 0 sets that you don't want to count it as a set, I don't think minus is possible on the
-other hand in strenght training so therefore all minus numbers will become plus in the worksheet.
-- The Google Sheets is used so you can store your data.
+- We wanted to make an inclusive and stigma free site for sexually transmittes infections.
+- We used rainbow related colours in a more pastell version to show that we accept everyone and
+that we don't judge and the pastell version is to make it friendlier and more open to the eyes.
+- Our direction to LGTBQI+ is because the community is more stigmatized and therefore less likely
+to find out about infections in time.
 
 
 ### Google Sheets
 
-- Data is uploaded to Google Sheets https://docs.google.com/spreadsheets/d/1I0pcPtlLThLbg1K50S_jZvfNzl-dlxeSda_ch4YiTQI/edit#gid=0 
-- I added data for 2 exercises so it is possible to see data before it is testet by Code Institute, so I would think that it will be more exercises
-added in the future by external parties.
+- Data is taken from https://docs.google.com/spreadsheets/d/1WbLvIHAxbtCMGZuvHieJsoPTi4rfxFQwe68zECg8iXQ/edit?gid=0#gid=0
+- In the future we want to make the sheet connected to make updates easier
 
 <img src="assets/images/google_sheets.png" alt='Google Sheets'>
 
 
 ### Features Left to Implement
 
-- I wanted to make an event information, also to get links from every picture on Home to the correct line in About Tea, make buttons change colour when marked, creating a couple of icons and maybe something more that I haven't thought about.
+- We have many ideas for the future, mainly to connect to partners.
 
 ## Testing 
 
-I have tested all links and buttons including navbar and they all work, the form also work and requires an email in email field, one of the radio buttons and the name fields filled in, but checkbox is optional.
-I have tested on Chrome, Firefox and Edge without a problem, checked on many different sized from about 280p to 2000 px wide and 400px to about 2000 px high and didn't find any problems with the responsiveness.
+-
 
 
 ### Validator Testing 
