@@ -42,7 +42,6 @@
       <title>STIgma Free</title>
       <link rel="stylesheet" href="assets/css/style_amir.css" />
       <style>
-
         main {
           flex: 1; /* This allows the main content to grow and push the footer down */
         }
@@ -117,11 +116,6 @@
           ); /* Green for clicked no button */
         }
 
-        #score {
-          font-size: 18px;
-          margin-top: 20px;
-        }
-
         .hidden {
           display: none;
         }
@@ -131,19 +125,29 @@
       <header>
         <div class="nav-container flex">
           <a href="index.html" class="logo">
-            <img
-              src="assets/css/image-logo/logo-1.jpg"
-              alt="STIgma FREE Logo"
-            />
+            <img src="assets/css/image-logo/logo-1.jpg" alt="STIgma FREE Logo" />
           </a>
           <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-          <label for="nav-toggle" class="nav-toggle-label"
-            ><i class="fa-solid fa-bars"></i
-          ></label>
+          <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+          </label>
           <nav class="nav-menu">
             <ul class="nav-menu-list">
               <li><a href="index.html">Home</a></li>
-              <li><a href="info.html">Info</a></li>
+              <li class="dropdown">
+                <a href="info.html">Info</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                  <li><a href="#">Link 4</a></li>
+                  <li><a href="#">Link 5</a></li>
+                  <li><a href="#">Link 6</a></li>
+                  <li><a href="#">Link 7</a></li>
+                  <li><a href="#">Link 8</a></li>
+                  <li><a href="#">Link 9</a></li>
+                </ul>
+              </li>
               <li><a href="quiz.html">Questionnaire</a></li>
               <li><a href="team.html">Team</a></li>
             </ul>
@@ -160,7 +164,10 @@
               <button id="yes">Yes</button>
               <button id="no">No</button>
             </div>
-            <div class="book-div"></div>          
+            <div class="book-div">
+              <button id="appointment" class="hidden"><a href="https://www.stockholmsmansmottagning.se/en/news/boka-tid-online/">Book Appointment</a></button>
+              <button id="order_test" class="hidden"><a href="https://www.thesexualhealthhub.co.uk/stis/at-home-sti-test-kit/">Order Home Test Kit</a></button>
+            </div>          
           </div>
         </div>
         <div id="navigation">
@@ -285,18 +292,23 @@
           document.getElementById("question").textContent =
             "Thank you for participating!";
           document.getElementById("buttons").classList.add("hidden");
-
+          
           let recommendation;
           if (score >= 4) {
             recommendation =
               "**High Risk:** You need to book an appointment with a Dr.";
+              document.getElementById("appointment").classList.remove("hidden");
           } else if (score === 3) {
             recommendation =
               "**Moderate Risk:** You can order a home kit for testing or book an appointment with a Dr.";
+              document.getElementById("appointment").classList.remove("hidden");
+              document.getElementById("order_test").classList.remove("hidden");
           } else {
             recommendation =
               "**Low Risk:** The importance of safe sex and regular check ups. If you never done a check up please book your first appointment and know your status";
-          }
+              document.getElementById("appointment").classList.remove("hidden");
+              document.getElementById("order_test").classList.remove("hidden");
+            }
 
           document.getElementById("question").textContent =
             "Thank you for participating!";
