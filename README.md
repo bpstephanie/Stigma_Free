@@ -1,7 +1,7 @@
-# June-2024-Hackathon
+# STIgma Free
 - StIgma Free is an app to read and interact related to sexual health, the first version of the app will be related to sexually transmitted diseases.
 - You will be able to read about the diseases, be able through thoughtfully choosen question see if you are at a risk of having a disease and recommended measures.
-- You will be able to be anonymous or register to get more help, you will be able to get suggestions related to both health professionals and tests, but we are not a doctors clinic so we will not suggest treatments.
+- You will be able to be anonymous to get more help, you will be able to get suggestions related to both health professionals and tests, but we are not a doctors clinic so we will not suggest treatments.
 
 <img src="assets/images/amiresponsive.png" alt="Responsive Screens">
 
@@ -14,50 +14,10 @@
     * Code Institute Student.*
 * [Amir Shkolnik](https://www.linkedin.com/in/amirshkolnik/)
     * Code Institute Student.*
-* [Sophie Tigerholm](https://www.linkedin.com/in/)
+* [Sophie Tigerholm](https://www.linkedin.com/in/sophie-tigerholm-9349a4aa/)
     * Code Institute Student.*
 * [Alexander Åberg](https://www.linkedin.com/in/alexander-åberg)
     * Code Institute Student.*
-
----
-**TABLE OF CONTENTS**
-* [USER EXPERIENCE](#UX)
-    * [Visitor Goals](#visitor-goal)
-    * [Business Goals](#business-goals)
-    * [User Stories](#user-stories)
-* [Existing Features](#existing-features)
-    * [Page Layouts/Features](#page-related-1)
-    * [Page Layouts/Features](#page-related-2)
-    * [Page Layouts/Features](#page-related-3)
-    * [Page Layouts/Features](#page-related-4)
-    * [Page Layouts/Features](#page-related-etc.)
-* [Thoughts behind our choices](#thoughts-being-our-choices)
-* [Database](#database)
-* [Features Left to Implement](#features-left-to-implement)
-* [Testing](#testing)
-    * [Validator Testing](#validator-testing)
-    * [Unfixed and fixed Bugs](#unfixed-and-fixed-bugs)
-* [Quality Score through Google Devtools Lighthouse](#quality-score)
-* [Deployment](#deployment)
-* [Credits](#credits)
-* [Content](content)
-* [Media](#media)
-* [Wireframe](#wireframe)
-* [Flowchart](#flowchart)
-* [Technologies Used](#github-projects)
-* [Colours & Text](#colours-text)
-* [Agile](#agile)
-* [Kanban](#kanban)
-* [Future Development, Iteration and Implementation](#future-development-iteration-and-implementation)
-* [Technologies Used](#technologies-used)
-    * [Languages Used](#languages-used)
-    * [Frameworks Used](#frameworks-used)
-    * [Databases Used](#databases-used)
-    * [Libraries and Packages Used](#libraries-and-packages-used)
-    * [Programmes and Applications Used](#programmes-and-applications-used)
-* [Data Structure](#data-structure)
-
----
 
 
 # UX
@@ -80,9 +40,9 @@ How STIgma Free fills the needs:
 
 ### Business Goals
 The Business Goals are:
-- Spread awareness of sexually transmitted infections judgement free.
-- Get people to be able to contact our partners in the helath care industry.
-- If enough people will be aware the bigger chance that we will eradicate the infections.
+- Spread awareness of sexually transmitted infections judgement free and make people test and contact health clinics.
+- Get people to be able to contact our partners in the health care industry.
+- If enough people will be aware the bigger chance that we will eradicate the infections and diseases.
 
 ### User Stories
 1. As a person with an active sex life I would want to protect my sexual health.
@@ -93,14 +53,13 @@ The Business Goals are:
 ### Existing Features
 
 - __Header__
-  - Header has a menu with a nav bar or text on bigger screens and the website name in h1.
+  - Header has a menu with a nav bar or text on bigger screens and the website name in a logo.
 
 <img src="assets/images/header.png" alt="Header">
 
 - __Navigation Bar__
 
   - The navigation bar can be found on all pages and is fully responsive, it will turn between a bar or buttons depending on the size of the screen.
-  - The bar will be visible even if you scroll down. 
 
 <img src="assets/images/navbar.png" alt="Nav bar">
 
@@ -108,20 +67,33 @@ The Business Goals are:
 
   - The landing page or "Home" has a questionnare and some short information about the STI's with a button on each to read more, which will take them to the correct section in the info page. 
   - It also have small pictures for each disease and infection and when you click them you get a bigger version.
+  - At top of page you can read what to think about under a picture and underneat you can take the questionnaire which will take you to the questionnaire page.
+  - The page has some short information about all diseases and infetions, it also have pictures and if you press condom buttons you can read more on the related page.
 
 <img src="assets/images/landingpage.png" alt="Landing Page">
 
-- __Info__
+- __STDs__
 
-  - Info has information about different sexually transmitted infections.
+  - The button will make you able to reach information about all 9 STI and STD.
 
-<img src="assets/images/abouttea.png" alt="About Tea">
+- __Disease and Infection pages__
+
+  - The 9 pages will let you read about the infections and diseases 
+
+<img src="assets/images/std-sti.png" alt="Disease and Infection pages">
+
+- __Questionnaire__
+
+  - This page has a questionnaire quiz that you can take to get recommendations to contact our partner to get tests or book an apointment, if you are considered high risk we will recommend the health clinic.
+  - The buttons will be coloured according to if it increases or decreases your risk.
+
+  <img src="assets/images/questionnaire.png" alt="Questionnaire">
 
 - __Team__
 
-  - The Team page has information about the team, with pictures, short quotes and links to LinkedIn and GitHub.
+  - The Team page has information about the team, with pictures, short info and links to LinkedIn and GitHub.
 
-<img src="assets/images/contactus.png" alt="Contact Us">
+<img src="assets/images/team.png" alt="Team">
 
 - __The Footer__ 
 
@@ -129,23 +101,29 @@ The Business Goals are:
 
 <img src="assets/images/footer.png" alt="Footer">
 
+
 ### Thoughts behind our choices
 
 - We wanted to make an inclusive and stigma free site for sexually transmittes infections.
-- We used rainbow related colours in a more pastell version to show that we accept everyone and
-that we don't judge and the pastell version is to make it friendlier and more open to the eyes.
+- We used rainbow related colours to show that we are inclusive and that you can be yourself.
 - Our direction to LGTBQI+ is because the community is more stigmatized and therefore less likely
 to find out about infections in time.
+- We want people to be able to get recommendations so they have a next step to take.
 
 
 ### Agile
+
 - We have worked agile to be able to adjust and fix issues that need to be prioritized.
 - High level of open communication mainly through slack.
 - The scope has changed during the course of the project according to the agile philosophy of it being most important with a good enough functioning product.
 
+
 ### Kanban
+
 - Worked in a Kanban board on GitHub to see where we are with our features in the project.
+
 <img src="assets/images/kanban.png" alt='Kanban Board'>
+
 
 ### Google Sheets
 
@@ -157,11 +135,13 @@ to find out about infections in time.
 
 ### Features Left to Implement
 
-- We have many ideas for the future, mainly to connect to partners.
+- In the future we want to have partners that sell tests and health clinics for the visitors to visit, instead of our current temporary pages.
 
-## Testing 
 
--
+### Testing 
+
+- We have tested on pc, mac and phones, also checked the responsivness on different screen sized without any issues.
+- We have clicked to make all links and buttons to work.
 
 
 ### Validator Testing 
@@ -173,14 +153,15 @@ to find out about infections in time.
 - JS
   - No errors was returned for JS, but 16 warnings, 8 undefined cariables and 3 unused variables when passing through the official [(Jigsaw) validator](https://jshint.com/) I will need to work on them in the future.
 
-
 <img src="assets/images/validator-html.png" alt='Validator html'>
 <img src="assets/images/validator-css.png" alt='Validator css'>
 <img src="assets/images/validator-js.png" alt='Validator js'>
 
+
 ### Unfixed and fixed Bugs
 
 - Solved all known bugs.
+
 
 ### Quality Score through Google Devtools Lighthouse
 
@@ -194,7 +175,7 @@ to find out about infections in time.
 <img src="assets/images/lighthouse-contactus-computer.png" alt="Lighthouse Contact Us Computer">
 
 
-## Deployment
+### Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
@@ -207,12 +188,13 @@ to find out about infections in time.
   - Link to the live version of the project can be found here: - https://johanplar.github.io/Stigma_Free/ and to the GitHub page here: https://github.com/JohanPlAr/Stigma_Free 
 
 
-
-## Credits 
+### Credits 
 
 Favicon from  <a href="https://favicon.io/emoji-favicons/rainbow-flag/">Icon by John Sorrentino and open source project Twemoji.</a>
 
 - STI & STD information from 1177, RFSL, NHS and internetmedicin.se
+- Colour image from Coolors.co
+- Images from pexels.com
 
 
 ### Content 
@@ -224,9 +206,10 @@ Favicon from  <a href="https://favicon.io/emoji-favicons/rainbow-flag/">Icon by 
 
 - The photos used on the home is from 
 
+
 ### Wireframe
 
-- Used Balsamiq for Wireframe and pen + paper.
+- Used Balsamiq for Wireframe and pen + paper
 
 <img src="assets/images/manual-wireframe.jpg" alt="Wireframe on Paper">
 <img src="assets/images/wireframe-home.png" alt="Wireframe for Home">
@@ -234,9 +217,11 @@ Favicon from  <a href="https://favicon.io/emoji-favicons/rainbow-flag/">Icon by 
 <img src="assets/images/wireframe-questionnaire.png" alt="Wireframe for Questionnaire">
 <img src="assets/images/wireframe-team.png" alt="Wireframe for Team">
 
+
 ### Flowchart
 
 - Flowchart made with pen and paper
+
 <img src="assets/images/manual-flowchart.jpg" alt="Flowchart on Paper">
 
 
@@ -244,25 +229,23 @@ Favicon from  <a href="https://favicon.io/emoji-favicons/rainbow-flag/">Icon by 
 
 - HTML - For how the website with the pages is built and planned 
 - CSS - For all the styling
-- Images  - 
+- Images  -  
 - Fonts - From Google Fonts
 - Icons - From Fontawesome 
 - Wireframe - From Balsamiq + Pen & Paper
 - Flowchart - Pen & Paper
 - Favicons - Icon from Favicon.io
 - Mockup - Generated at amiresponsive 
-- Rainbow colours inspired by LGTBQI+ community but made pastell to make them friendlier to the eyes
+- Rainbow colours inspired by LGTBQI+ community.
 - Google Devtools to check responsiveness and to check Lighthouse for Accessibility
 - GitHub for storing the project and deploying it
 - Gitpod and Codespaces for project development
 - Slack for communication with the team
 - Google Sheets for information
 
-### Colours & Text
 
-- Did choose pastell colours that is colourfull according to rainbows
-- The colour for About Tea is pastel colour to make it friendlier to the eyes compared to sharp colours, the white and black doesn't really exist as pastel so I tried to make them friendlier also which you can see on the colours and in the css picture below.
-- Used Font style that is seperate between the logo, h1 and h2 compared to h3 and text with backup font for browsers without the font, the text colour in general is supposed to fit very well with the background colours.
+### Colours
 
-<img src="assets/images/colours.png" alt="Pastel Colours">
-<img src="assets/images/colours.png" alt="Pastel Colours">
+- Did choose colours that is colourful according to rainbows with a white base for readabillity, you can find the colours on the borders, logos and icons.
+
+<img src="assets/images/colours.png" alt="Rainbow Colours + White">
