@@ -48,12 +48,16 @@ nav {
   font-weight: bold;
   color: #333;
   text-decoration: none;
-  margin-right: auto;
+
 }
+
 
 .logo img {
   margin-top: 20px;
   max-height: 50px;
+  margin-right: auto;
+  height: auto;
+  width: 250px;
 }
 
 .nav-menu-list {
