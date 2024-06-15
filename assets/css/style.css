@@ -169,6 +169,10 @@ nav {
   margin: 20px 0;
 }
 
+#safe-text {
+  padding: 0 2%;
+}
+
 button {
   margin: 5px;
   font-size: large;
