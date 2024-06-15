@@ -2,6 +2,7 @@
 - StIgma Free is an app to read and interact related to sexual health, the first version of the app will be related to sexually transmitted diseases.
 - You will be able to read about the diseases, be able through thoughtfully choosen question see if you are at a risk of having a disease and recommended measures.
 - You will be able to be anonymous to get more help, you will be able to get suggestions related to both health professionals and tests, but we are not a doctors clinic so we will not suggest treatments.
+- Link to the live version of the project can be found here: - <a href="https://johanplar.github.io/Stigma_Free/"> and to the GitHub page here: <a href="https://github.com/JohanPlAr/Stigma_Free"> 
 
 <img src="assets/images/amiresponsive.png" alt="Responsive Screens">
 
@@ -147,11 +148,11 @@ to find out about infections in time.
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Falexanderaberg.github.io%2Fbattleship%2F#cl177c14).
+  -  [W3C validator](https://validator.w3.org/nu/?).
 - CSS
-  - No errors but 1 warning were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Falexanderaberg.github.io%2Fbattleship%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv) it got validated as CSS Stage 3 +SVG, the warning I ignore because I want the color and background-color to be the same, because I don't want the text to be seen before clicking a square!
+  -  [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?) 
 - JS
-  - No errors was returned for JS, but 16 warnings, 8 undefined cariables and 3 unused variables when passing through the official [(Jigsaw) validator](https://jshint.com/) I will need to work on them in the future.
+  - No errors was returned for JS, but 41 warnings, in the same style about ES6 [(Jigsaw) validator](https://jshint.com/).
 
 <img src="assets/images/validator-html.png" alt='Validator html'>
 <img src="assets/images/validator-css.png" alt='Validator css'>
@@ -167,13 +168,14 @@ to find out about infections in time.
 
 - Lighthouse testing on Chrome Incognito to prevent cookies and background cache to slow down.
 
-<img src="assets/images/lighthouse-index-phone.png" alt="Lighthouse Index Phone">
-<img src="assets/images/lighthouse-index-computer.png" alt="Lighthouse Index Computer">
-<img src="assets/images/lighthouse-abouttea-phone.png" alt="Lighthouse About Tea Phone">
-<img src="assets/images/lighthouse-abouttea-computer.png" alt="Lighthouse About Tea Computer">
-<img src="assets/images/lighthouse-contactus-phone.png" alt="Lighthouse Contact Us Phone">
-<img src="assets/images/lighthouse-contactus-computer.png" alt="Lighthouse Contact Us Computer">
-
+<img src="assets/images/lighthouse-home-phone.png" alt="Lighthouse Home Phone">
+<img src="assets/images/lighthouse-home-desktop.png" alt="Lighthouse Home Desktop">
+<img src="assets/images/lighthouse-std-phone.png" alt="Lighthouse STD Phone">
+<img src="assets/images/lighthouse-std-desktop.png" alt="Lighthouse STD Desktop">
+<img src="assets/images/lighthouse-questionnaire-phone.png" alt="Lighthouse Questionnaire Phone">
+<img src="assets/images/lighthouse-questionnaire-desktop.png" alt="Lighthouse Questionnaire Desktop">
+<img src="assets/images/lighthouse-team-phone.png" alt="Lighthouse Team Phone">
+<img src="assets/images/lighthouse-team-desktop.png" alt="Lighthouse Team Desktop">
 
 ### Deployment
 
@@ -185,7 +187,7 @@ to find out about infections in time.
   - In GitHub you can open every seperate file including html. css. images and even favicons and see the folder structure.
   - It is possible to check the commit history in github-pages under Deployment to the right
 
-  - Link to the live version of the project can be found here: - https://johanplar.github.io/Stigma_Free/ and to the GitHub page here: https://github.com/JohanPlAr/Stigma_Free 
+  - Link to the live version of the project can be found here: - <a href="https://johanplar.github.io/Stigma_Free/"> and to the GitHub page here: <a href="https://github.com/JohanPlAr/Stigma_Free"> 
 
 
 ### Credits 
@@ -194,7 +196,7 @@ Favicon from  <a href="https://favicon.io/emoji-favicons/rainbow-flag/">Icon by 
 
 - STI & STD information from 1177, RFSL, NHS and internetmedicin.se
 - Colour image from Coolors.co
-- Images from pexels.com
+- Images from pexels.com and pixelsquid.com
 
 
 ### Content 
@@ -204,7 +206,7 @@ Favicon from  <a href="https://favicon.io/emoji-favicons/rainbow-flag/">Icon by 
 
 ### Media
 
-- The photos used on the home is from 
+- The photos used on the home is from pexels.com and pixelsquid.com
 
 
 ### Wireframe
@@ -229,7 +231,8 @@ Favicon from  <a href="https://favicon.io/emoji-favicons/rainbow-flag/">Icon by 
 
 - HTML - For how the website with the pages is built and planned 
 - CSS - For all the styling
-- Images  -  
+- JS - For the Questionnaire and to change between std's
+- Images  -  pexels and PixelSquid
 - Fonts - From Google Fonts
 - Icons - From Fontawesome 
 - Wireframe - From Balsamiq + Pen & Paper
