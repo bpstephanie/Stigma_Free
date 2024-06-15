@@ -1,373 +1,413 @@
 <!DOCTYPE html>
 <html>
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- Meta tags for search engines -->
-      <meta
-        name="description"
-        content="STIgma Free. Verified and up-to-date information about sexual health for the LGBTQIA+
-              community."
-      />
-      <meta
-        name="keywords"
-        content="stigma, sexual health, lgbtqia+, health, information"
-      />
-      <!-- Fontawesome-->
-      <script
-        src="https://kit.fontawesome.com/6bd427a7f6.js"
-        crossorigin="anonymous"
-      ></script>
-      <!-- Favicon -->
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="assets/favicon/apple-touch-icon.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="assets/favicon/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="assets/favicon/favicon-16x16.png"
-      />
+<!DOCTYPE html>
+<html lang="en">
 
-      <title>STIgma FREE</title>
-      <link rel="stylesheet" href="assets/css/style.css" />
-      <style>
-        main {
-          flex: 1; /* This allows the main content to grow and push the footer down */
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Meta tags for search engines -->
+  <meta name="description" content="STIgma Free. Verified and up-to-date information about sexual health for the LGBTQIA+
+              community." />
+  <meta name="keywords" content="stigma, sexual health, lgbtqia+, health, information" />
+  <!-- Fontawesome-->
+  <script src="https://kit.fontawesome.com/6bd427a7f6.js" crossorigin="anonymous"></script>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
 
-        footer {
-          margin-top: auto;
-        }
+  <title>STIgma Free</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    main {
+      flex: 1;
+      /* This allows the main content to grow and push the footer down */
+    }
 
-        body {
-          font-family: Arial, sans-serif;
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          min-height: 100vh;
-          margin: 0;
-        }
+    footer {
+      margin-top: auto;
+    }
 
-        #question-container {
-          border: 1px solid #ddd;
-          padding: 15px;
-          margin-bottom: 20px;
-          width: 800px;
-          height: 300px;
-          display: inline-block;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
 
-        #question {
-          font-size: 25px;
-          padding-top: 50px;
-          height: 100px;
-          margin: 40px;
-          margin-bottom: 10px;
-          margin-top: auto;
-          text-transform: uppercase;
-        }
+    #question-container {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 20px;
+      width: 800px;
+      height: 300px;
+      display: inline-block;
+    }
 
-        #recommendation {
-          font-size: 25px;
-          color: #7a3927;
-          text-transform: uppercase;
-        }
+    #question {
+      padding-top: 5%;
+      font-size: 25px;
+      height: 100px;
+      margin-top: auto;
+      text-transform: uppercase;
+    }
 
-        #buttons {
-          text-align: center;
-          margin: 80px;
-        }
+    #recommendation {
+      font-size: 25px;
+      color: #7a3927;
+      text-transform: uppercase;
+    }
 
-        button {
-          margin: 5px;
-          font-size: large;
-          padding: 10px 20px;
-          border: 2px solid #ddd;
-          border-radius: 5px;
-          cursor: pointer;
-        }
+    #risk {
+      font-weight: bold;
+      font-size: 35px;
+      color: #cc431d;
+      text-transform: uppercase;
+      margin-bottom: 5%;
+      text-decoration: underline;
+    }
 
-        #yes.clicked {
-          background-color: rgba(
-            255,
-            0,
-            0,
-            0.526
-          ); /* Red for clicked yes button */
-        }
+    #buttons {
+      text-align: center;
+      margin: 5%;
+      margin-bottom: 5%;
+    }
 
-        #no.clicked {
-          background-color: rgba(
-            0,
-            128,
-            0,
-            0.545
-          ); /* Green for clicked no button */
-        }
+    button {
+      margin: 5px;
+      font-size: large;
+      padding: 10px 20px;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-        #appointment {
-          background-color: #4caf50;
-          transition: background-color 0.3s;
-        }
+    #yes.clicked {
+      background-color: rgba(255,
+          0,
+          0,
+          0.526);
+      /* Red for clicked yes button */
+    }
 
-        #appointment:hover {
-          background-color: #45a049;
-        }
+    #no.clicked {
+      background-color: rgba(0,
+          128,
+          0,
+          0.545);
+      /* Green for clicked no button */
+    }
 
-        #order_test {
-          background-color: #FFA500;
-          transition: background-color 0.3s;
-        }
+    .appointment, .order-test {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff !important;
+      background-color: #ff6b6b;
+      border: none;
+      border-radius: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
 
-        #order_test:hover {
-          background-color: #ff7700;
-        }
+    .appointment:before, .order-test:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
 
-        .hidden {
-          display: none;
-        }
-      </style>
-    </head>
-    <body>
-      <header>
-        <div class="nav-container flex">
-          <a href="index.html" class="logo">
-            <img src="assets/css/image-logo/logo_new.png" alt="STIgma FREE Logo" />
-          </a>
-          <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-          <label for="nav-toggle" class="nav-toggle-label">
-            <i class="fa-solid fa-bars"></i>
-          </label>
-          <nav class="nav-menu">
-            <ul class="nav-menu-list">
-              <li><a href="index.html">Home</a></li>
-              <li class="dropdown">
-                <a href="">STDs</a>
-                <ul class="dropdown-menu">
-                  <li><a href="chlamydia.html">Chlamydia</a></li>
-                  <li><a href="gonorrhea.html">Gonorrhea</a></li>
-                  <li><a href="hsv.html">HSV</a></li>
-                  <li><a href="hpv.html">HPV</a></li>
-                  <li><a href="hep-bc.html">Hepatitis B&C</a></li>
-                  <li><a href="trihomoniasis.html">Trichomoniasis</a></li>
-                  <li><a href="hep-a.html">Hepatitis A</a></li>
-                  <li><a href="bv.html">BV</a></li>
-                  <li><a href="hiv.html">HIV</a></li>
-                </ul>
-              </li>
-              <li><a href="quiz.html">Questionnaire</a></li>
-              <li><a href="team.html">Team</a></li>
+.appointment:hover:before, .order-test:hover:before {
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+}
+
+.appointment:hover, .order-test:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+    #order_test {
+      background-color: #FFA500;
+      transition: background-color 0.3s;
+    }
+
+    #order_test > a {
+      color:#fff;
+    }
+
+    #order_test:hover {
+      background-color: #ff7700;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav-container flex">
+      <a href="index.html" class="logo">
+        <img src="assets/css/image-logo/logo-1.jpg" alt="STIgma FREE Logo" />
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <nav class="nav-menu">
+        <ul class="nav-menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="">STDs</a>
+            <ul class="dropdown-menu">
+              <li><a href="chlamydia.html">Chlamydia</a></li>
+              <li><a href="gonorrhea.html">Gonorrhea</a></li>
+              <li><a href="hsv.html">HSV</a></li>
+              <li><a href="hpv.html">HPV</a></li>
+              <li><a href="hep-bc.html">Hepatitis B&C</a></li>
+              <li><a href="trihomoniasis.html">Trichomoniasis</a></li>
+              <li><a href="hep-a.html">Hepatitis A</a></li>
+              <li><a href="bv.html">BV</a></li>
+              <li><a href="hiv.html">HIV</a></li>
             </ul>
-          </nav>
+          </li>
+          <li><a href="quiz.html">Questionnaire</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="box-container">
+      <div class="box">
+        <div id="question"></div>
+        <div id="risk"></div>
+        <div id="recommendation">
         </div>
-      </header>
-      <div class="container">
-        <div class="box-container">
-          <div class="box">
-            <div id="question"></div>
-            <div id="recommendation"></div>
-            <div id="buttons">
-              <button id="yes">Yes</button>
-              <button id="no">No</button>
-            </div>
-            <div class="book-div">
-              <button id="appointment" class="hidden"><a href="https://www.stockholmsmansmottagning.se/en/news/boka-tid-online/">Book Appointment</a></button>
-              <button id="order_test" class="hidden"><a href="https://www.thesexualhealthhub.co.uk/stis/at-home-sti-test-kit/">Order Home Test Kit</a></button>
-            </div>          
-          </div>
+        <div id="buttons">
+          <button id="yes">Yes</button>
+          <button id="no">No</button>
         </div>
-        <div id="navigation">
-          <button id="info">Read more about STDs!</button>
-          <button id="team">Check our team</button>
+        <div class="book-div">
+          <button id="btn-appointment" class="hidden appointment"><a
+              href="https://www.stockholmsmansmottagning.se/en/news/boka-tid-online/" style="color: #fff;">Book Appointment</a></button>
+          <button id="order_test" class="hidden order-test"><a
+              href="https://www.thesexualhealthhub.co.uk/stis/at-home-sti-test-kit/">Order Home Test Kit</a></button>
         </div>
       </div>
+    </div>
+    <div id="navigation">
+      <button id="info">Read more about STDs!</button>
+      <button id="team">Check our team</button>
+    </div>
+  </div>
 
-    </main>
-    <footer>
-      <div class="footer-container">
-          <div class="footer-links">
-              <ul class="footer-menu-list">
-                  <div>
-                      <li>Connect With Us</li>
-                      <ul class="socialmedia-icons" class="flex">
-                          <li><a href="https://www.facebook.com/" target="_blank"
-                                  aria-label="Visit our Facebook page (opens in new tab)" rel="noopener"><i
-                                      class="fa-brands fa-facebook-f"></i></a></li>
-                          <li><a href="https://www.twitter.com/" target="_blank"
-                                  aria-label="Visit our Twitter page (opens in new tab)" rel="noopener"><i
-                                      class="fa-brands fa-twitter"></i></a></li>
-                          <li><a href="https://www.instagram.com/" target="_blank"
-                                  aria-label="Visit our Instagram page (opens in new tab)" rel="noopener"><i
-                                      class="fa-brands fa-instagram"></i></a></li>
-                      </ul>
-                  </div>
-                  <div>
-                      <li>Contact Us</li>
-                      <ul class="socialmedia-icons" class="flex">
-                          <li><a href="mailto:info@stigmafree.co.uk" aria-label="Send us an email"><i
-                                      class="fa-regular fa-envelope"></i></a></li>
-                      </ul>
-                  </div>
-              </ul>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <ul class="footer-menu-list">
+          <div>
+            <li>Connect With Us</li>
+            <ul class="socialmedia-icons" class="flex">
+              <li><a href="https://www.facebook.com/" target="_blank"
+                  aria-label="Visit our Facebook page (opens in new tab)" rel="noopener"><i
+                    class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="https://www.twitter.com/" target="_blank"
+                  aria-label="Visit our Twitter page (opens in new tab)" rel="noopener"><i
+                    class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/" target="_blank"
+                  aria-label="Visit our Instagram page (opens in new tab)" rel="noopener"><i
+                    class="fa-brands fa-instagram"></i></a></li>
+            </ul>
           </div>
-          <div class="copyright">&copy; 2023 STIgma Free. All rights reserved.</div>
+          <div>
+            <li>Contact Us</li>
+            <ul class="socialmedia-icons" class="flex">
+              <li><a href="mailto:info@stigmafree.co.uk" aria-label="Send us an email"><i
+                    class="fa-regular fa-envelope"></i></a></li>
+            </ul>
+          </div>
+        </ul>
       </div>
+      <div class="copyright">&copy; 2023 STIgma Free. All rights reserved.</div>
+    </div>
   </footer>
 
-      <script>
-        const questions = [
-          {
-            text: "Do you have any symtoms of an STD?",
-            yes: 1,
-            no: 6,
-          },
-          {
-            text: "Have you experienced any discharge from your genitals (vagina, penis, or urethra) that is different in color (yellow, green), consistency (thick), or smell (unpleasant)?",
-            yes: 2,
-            no: 2,
-          },
-          {
-            text: "Have you experienced any pain or discomfort during vaginal and/or anal sex??",
-            yes: 3,
-            no: 3,
-          },
-          {
-            text: "Have you noticed any sores, bumps, or white patches on your mouth, tongue, or throat?",
-            yes: 4,
-            no: 4,
-          },
-          {
-            text: "Have you experienced any bleeding, pain, or itching around your anus after anal sex?",
-            yes: 5,
-            no: 5,
-          },
-          {
-            text: "Have you noticed any unusual growths or lesions in the genital, anal, or upper thigh areas?",
-            yes: 6,
-            no: 6,
-          },
-          {
-            text: "Did you have a sexual encounter (vaginal, anal or oral sex) during past 3 months?",
-            yes: 7,
-            no: 9,
-          },
-          {
-            text: "Is the STD status of your recent partner unknown?",
-            yes: 8,
-            no: 13,
-          },
-          {
-            text: "Where you unprotected? Not using a condom (internal or external) consistently during all recent encounters?",
-            yes: 9,
-            no: 13,
-          },
-          {
-            text: "Are you currently using PrEP (Pre-Exposure Prophylaxis) for HIV prevention?",
-            yes: 10,
-            no: 13,
-          },
-          {
-            text: "Has it been more than 3 months since last STD test (Including HIV)?",
-            yes: 13,
-            no: 13,
-          },
-        ];
+  <script>
+    const questions = [
+      {
+        text: "Do you have any symtoms of an STD?",
+        yes: 1,
+        no: 6,
+      },
+      {
+        text: "Have you experienced any discharge from your genitals (vagina, penis, or urethra) that is different in color (yellow, green), consistency (thick), or smell (unpleasant)?",
+        yes: 2,
+        no: 2,
+      },
+      {
+        text: "Have you experienced any pain or discomfort during vaginal and/or anal sex??",
+        yes: 3,
+        no: 3,
+      },
+      {
+        text: "Have you noticed any sores, bumps, or white patches on your mouth, tongue, or throat?",
+        yes: 4,
+        no: 4,
+      },
+      {
+        text: "Have you experienced any bleeding, pain, or itching around your anus after anal sex?",
+        yes: 5,
+        no: 5,
+      },
+      {
+        text: "Have you noticed any unusual growths or lesions in the genital, anal, or upper thigh areas?",
+        yes: 6,
+        no: 6,
+      },
+      {
+        text: "Did you have a sexual encounter (vaginal, anal or oral sex) during past 3 months?",
+        yes: 7,
+        no: 9,
+      },
+      {
+        text: "Is the STD status of your recent partner unknown?",
+        yes: 8,
+        no: 13,
+      },
+      {
+        text: "Where you unprotected? Not using a condom (internal or external) consistently during all recent encounters?",
+        yes: 9,
+        no: 13,
+      },
+      {
+        text: "Are you currently using PrEP (Pre-Exposure Prophylaxis) for HIV prevention?",
+        yes: 10,
+        no: 13,
+      },
+      {
+        text: "Has it been more than 3 months since last STD test (Including HIV)?",
+        yes: 13,
+        no: 13,
+      },
+    ];
 
-        let currentQuestion = 0;
-        let score = 0;
-        let backgroundColor = "rgba(52, 15, 66, 0.399)"; // Initial background color
+    let currentQuestion = 0;
+    let score = 0;
+    let backgroundColor = "rgba(52, 15, 66, 0.399)"; // Initial background color
 
-        function displayQuestion() {
-          const question = questions[currentQuestion];
-          document.getElementById("question").textContent = question.text;
-          // document.getElementById("question-container").style.backgroundColor =
-          //   backgroundColor;
-          // Reset button click styles
-          document.getElementById("yes").classList.remove("clicked");
-          document.getElementById("no").classList.remove("clicked");
-        }
+    function displayQuestion() {
+      const question = questions[currentQuestion];
+      document.getElementById("question").textContent = question.text;
+      // document.getElementById("question-container").style.backgroundColor =
+      //   backgroundColor;
+      // Reset button click styles
+      document.getElementById("yes").classList.remove("clicked");
+      document.getElementById("no").classList.remove("clicked");
+    }
 
-        function handleAnswer(answer) {
-          const question = questions[currentQuestion];
-          if (answer === "yes") {
-            score++;
-            currentQuestion = question.yes;
-            // Update background color based on answer and current color
-            backgroundColor =
-              answer === "yes" ? "rgba(66, 15, 24, 0.399)" : backgroundColor;
-          } else {
-            currentQuestion = question.no;
-            // Update background color based on answer and current color
-            backgroundColor =
-              answer === "no" ? "rgba(16, 66, 15, 0.399)" : backgroundColor;
-          }
+    function handleAnswer(answer) {
+      const question = questions[currentQuestion];
+      if (answer === "yes") {
+        score++;
+        currentQuestion = question.yes;
+        // Update background color based on answer and current color
+        backgroundColor =
+          answer === "yes" ? "rgba(66, 15, 24, 0.399)" : backgroundColor;
+      } else {
+        currentQuestion = question.no;
+        // Update background color based on answer and current color
+        backgroundColor =
+          answer === "no" ? "rgba(16, 66, 15, 0.399)" : backgroundColor;
+      }
 
-          if (currentQuestion === 13) {
-            displayRecommendation();
-          } else {
-            displayQuestion();
-          }
-
-          // Add clicked style to the chosen button
-          document.getElementById(answer).classList.add("clicked");
-        }
-
-        function displayRecommendation() {
-          document.getElementById("question").textContent =
-            "Thank you for participating!";
-          document.getElementById("buttons").classList.add("hidden");
-          
-          let recommendation;
-          if (score >= 4) {
-            recommendation =
-              "**High Risk:** You need to book an appointment with a Dr.";
-              document.getElementById("appointment").classList.remove("hidden");
-          } else if (score === 3) {
-            recommendation =
-              "**Moderate Risk:** You can order a home kit for testing or book an appointment with a Dr.";
-              document.getElementById("appointment").classList.remove("hidden");
-              document.getElementById("order_test").classList.remove("hidden");
-          } else {
-            recommendation =
-              "**Low Risk:** The importance of safe sex and regular check ups. If you never done a check up please book your first appointment and know your status";
-              document.getElementById("appointment").classList.remove("hidden");
-              document.getElementById("order_test").classList.remove("hidden");
-            }
-
-          document.getElementById("question").textContent =
-            "Thank you for participating!";
-          document.getElementById("recommendation").textContent =
-            recommendation;
-        }
-
+      if (currentQuestion === 13) {
+        displayRecommendation();
+      } else {
         displayQuestion();
+      }
 
-        document
-          .getElementById("yes")
-          .addEventListener("click", () => handleAnswer("yes"));
-        document
-          .getElementById("no")
-          .addEventListener("click", () => handleAnswer("no"));
+      // Add clicked style to the chosen button
+      document.getElementById(answer).classList.add("clicked");
+    }
 
-        // Navigation buttons
-        document.getElementById("info").addEventListener("click", () => {
-          window.location.href = "chlamydia.html";
-        });
-        document.getElementById("team").addEventListener("click", () => {
-          window.location.href = "team.html";
-        });
-      </script>
-    </body>
-  </html>
+    function displayRecommendation() {
+      document.getElementById("question").textContent =
+        "Thank you for participating!";
+      document.getElementById("buttons").classList.add("hidden");
+
+      let recommendation;
+      let risk;
+      let riskElement = document.getElementById("risk")
+      if (score >= 4) {
+        risk = "High Risk";
+        recommendation =
+          "You need to book an appointment with a Dr.";
+        document.getElementById("btn-appointment").classList.remove("hidden");
+        document.getElementById("risk").classList.remove("hidden");
+
+
+      } else if (score === 3) {
+        risk = "Moderate Risk";
+        recommendation =
+          "You can order a home kit for testing or book an appointment with a Dr.";
+        document.getElementById("btn-appointment").classList.remove("hidden");
+        document.getElementById("order_test").classList.remove("hidden");
+        document.getElementById("risk").classList.remove("hidden");
+        riskElement.style.color = 'orange';
+      } else {
+          risk = "Low Risk";
+        recommendation =
+      
+          "The importance of safe sex and regular check ups. If you never done a check up please book your first appointment and know your status";
+        document.getElementById("btn-appointment").classList.remove("hidden");
+        document.getElementById("order_test").classList.remove("hidden");
+        riskElement.style.color = 'green';
+      }
+
+      document.getElementById("question").textContent =
+        "Thank you for participating!";
+      document.getElementById("risk").textContent = risk;
+      document.getElementById("recommendation").textContent =
+        recommendation;
+    }
+
+    displayQuestion();
+
+    document
+      .getElementById("yes")
+      .addEventListener("click", () => handleAnswer("yes"));
+    document
+      .getElementById("no")
+      .addEventListener("click", () => handleAnswer("no"));
+
+    // Navigation buttons
+    document.getElementById("info").addEventListener("click", () => {
+      window.location.href = "chlamydia.html";
+    });
+    document.getElementById("team").addEventListener("click", () => {
+      window.location.href = "team.html";
+    });
+  </script>
+</body>
+
+</html>
+
 </html>
