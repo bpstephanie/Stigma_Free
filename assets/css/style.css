@@ -580,9 +580,8 @@ footer {
 
 .hero-text h2 {
   padding: 20px;
-  font-size: 3rem;
+  font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  max-width: 800px;
   margin: 0 auto;
   white-space: wrap;
 }
@@ -610,6 +609,10 @@ footer {
   text-align: center;
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#img-ind {
+  width: 100%;
 }
 
 .box-container {
