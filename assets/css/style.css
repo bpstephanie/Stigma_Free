@@ -162,6 +162,24 @@ nav {
   margin: 20px 0;
 }
 
+button {
+  margin: 5px;
+  font-size: large;
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-button {
+  margin: 5px;
+  font-size: large;
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .red { color: #e60000; }
 .orange { color: #ff8c00; }
 .yellow { color: #ffed00; }
@@ -197,7 +215,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
-  width: 100%;
+  width: 70%;
 }
 
 .box-container > * {
