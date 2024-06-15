@@ -112,16 +112,18 @@ nav {
   position: relative;
 }
 .dropdown-menu {
+  text-align: center;
   display: none;
   position: absolute;
   background-color: #F9F9F9;
   min-width: 220px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  padding-top: 10px;
 }
 
 .dropdown-menu li {
-  padding: 12px 16px;
+  padding: 12px 1px 12px 1px;
   list-style-type: none;
 }
 
