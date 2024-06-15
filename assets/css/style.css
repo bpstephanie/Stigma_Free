@@ -112,16 +112,18 @@ nav {
   position: relative;
 }
 .dropdown-menu {
+  text-align: center;
   display: none;
   position: absolute;
   background-color: #F9F9F9;
   min-width: 220px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  padding-top: 10px;
 }
 
 .dropdown-menu li {
-  padding: 12px 16px;
+  padding: 12px 1px 12px 1px;
   list-style-type: none;
 }
 
@@ -160,6 +162,24 @@ nav {
   margin: 20px 0;
 }
 
+button {
+  margin: 5px;
+  font-size: large;
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-button {
+  margin: 5px;
+  font-size: large;
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .red { color: #e60000; }
 .orange { color: #ff8c00; }
 .yellow { color: #ffed00; }
@@ -195,7 +215,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
-  width: 100%;
+  width: 70%;
 }
 
 .box-container > * {
