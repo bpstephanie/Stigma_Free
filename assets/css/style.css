@@ -224,6 +224,13 @@ button {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.top-box-cta {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 .safe-sex-list {
   padding: 5%;
   letter-spacing: 0.05em;
