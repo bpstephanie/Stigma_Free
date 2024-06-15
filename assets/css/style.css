@@ -169,6 +169,14 @@ nav {
   margin: 20px 0;
 }
 
+#cta-ind {
+  padding: 20px;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  white-space: wrap;
+}
+
 #safe-text {
   padding: 0 2%;
 }
